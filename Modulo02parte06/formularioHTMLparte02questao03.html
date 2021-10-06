@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=“utf-8” />
+        <title>Formulário</title>
+    </head>
+    <body>
+        <fieldset>
+        <legend><strong style="font-size:150%">Digite seus dados</strong></legend>
+            <form method="post">
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" />
+            </p>
+            <p>
+                <label for="e-mail">E-mail:</label>
+                <input type="email" id="e-mail">
+            </p>
+             <p>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha">
+            </p>
+            <p>
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" id="nascimento">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend><strong style="font-size:150%">Quais cores voce gosta?</strong></legend>
+            <p>
+             <input type="checkbox" name="cor" id="cor1" value="verde" />
+                <label for="cor1" style="color:green">Verde</label>
+            </p>
+            <p>
+                <input type="checkbox" name="cor" id="cor2" value="vermelho"/>
+                <label for="cor2" style="color:red">Vermelho</label>
+            </p>
+            <p>
+                <input type="checkbox" name="cor" id="cor3" value="laranja"/>
+                <label for="cor3" style="color:orange">Laranja</label>
+            </p>
+            <p>
+                <input type="checkbox" name="cor" id="cor4" value="azul"/>
+              <label for="cor4" style="color:blue">Azul</label>
+            </p>
+            <p>
+                <input type="checkbox" name="cor" id="cor5" value="preto"/>
+              <label for="cor5" style="color:black">Preto</label>
+            </p>
+            <p>
+                <input type="checkbox" name="cor" id="cor6" value="amarelo"/>
+              <label for="cor6" style="color:yellow">Amarelo</label>
+            </p>
+        </fieldset>
+        <fieldset>
+        <legend><strong style="font-size:150%">Qual sua idade?</strong></legend>
+            <p>
+                <input type="radio" name="idade" id="idade1" value="verde" />
+                <label for="idade1" >0-18</label>
+            </p>
+            <p>
+                <input type="radio" name="idade" id="idade2" value="vermelho"/>
+                <label for="idade2" >19-25</label>
+            </p>
+            <p>
+                <input type="radio" name="idade" id="idade3" value="laranja"/>
+                <label for="idade3" >26-40</label>
+            </p>
+            <p>
+                <input type="radio" name="idade" id="idade4" value="azul"/>
+                <label for="idade4" >41+</label>
+            </p> 
+        </fieldset>
+        <fieldset>
+        <legend><strong style="font-size:150%">Quanto feliz voce está hoje?</strong></legend>
+            <label for="felicidade"style="font-size:35px">&#9785;</label>
+            <input type="range" id="felicidade" min="0" max="1000" value="500" />
+            <label for="felicidade"style="font-size:50px">&#9786;</label>
+        </fieldset>
+        <div class="button">
+            <button type="submit">Enviar!</button>
+            <button type="reset">Resetar!</button>
+        </div>
+        </form>
+    </body>
+</html>

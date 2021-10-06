@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=“utf-8” />
+        <title>Formulário</title>
+    </head>
+    <body>
+        <h2>Digite seus dados</h2>
+        <form method="post">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" />
+        </p>
+        <p>
+            <label for="e-mail">E-mail:</label>
+            <input type="email" id="e-mail">
+        </p>
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha">
+        </p>
+        <p>
+            <label for="nascimento">Data de nascimento:</label>
+            <input type="date" id="nascimento">
+        </p>
+        <h3>Quais cores voce gosta?</h3>
+        <p>
+            <input type="checkbox" name="cor" id="cor1" value="verde" />
+            <label for="cor1" style="color:green">Verde</label>
+        </p>
+        <p>
+            <input type="checkbox" name="cor" id="cor2" value="vermelho"/>
+            <label for="cor2" style="color:red">Vermelho</label>
+        </p>
+        <p>
+            <input type="checkbox" name="cor" id="cor3" value="laranja"/>
+            <label for="cor3" style="color:orange">Laranja</label>
+        </p>
+        <p>
+            <input type="checkbox" name="cor" id="cor4" value="azul"/>
+            <label for="cor4" style="color:blue">Azul</label>
+        </p>
+
+        <h3>Qual sua idade?</h3>
+        <p>
+            <input type="radio" name="idade" id="idade1" value="verde" />
+            <label for="idade1" >0-18</label>
+        </p>
+        <p>
+            <input type="radio" name="idade" id="idade2" value="vermelho"/>
+            <label for="idade2" >19-25</label>
+        </p>
+        <p>
+            <input type="radio" name="idade" id="idade3" value="laranja"/>
+            <label for="idade3" >26-40</label>
+        </p>
+        <p>
+            <input type="radio" name="idade" id="idade4" value="azul"/>
+            <label for="idade4" >41+</label>
+        </p> 
+
+        <h3>Quanto feliz voce está hoje?</h3>
+        
+        <div>
+            <label for="felicidade">Triste</label>
+            <input type="range" id="felicidade" min="0" max="1000" value="500" />
+            <label for="felicidade">Feliz</label>
+        </div>
+        
+        <div class="button">
+            <button type="submit">Enviar!</button>
+            <button type="reset">Resetar!</button>
+        </div>
+        </form>
+    </body>
+</html>
