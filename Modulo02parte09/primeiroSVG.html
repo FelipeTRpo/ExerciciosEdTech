@@ -8,13 +8,15 @@
 </head>
 <body>
     <h1>Um onibus no SVG</h1>
-    <svg width="800" height="600">
+    <svg width="800" height="600" >
+       
         <polygon points="100,10 420,10 470,100 50,100" style="fill:red;stroke:black;stroke-width:1;" />
         <rect x="120" y="30" width="80" height="40" style="fill:lightblue;stroke:black;stroke-width:1;" />
         <rect x="220" y="30" width="80" height="40" style="fill:lightblue;stroke:black;stroke-width:1;" />
         <rect x="320" y="30" width="80" height="40" style="fill:lightblue;stroke:black;stroke-width:1;" />
         <circle cx="120" cy="110" r="30" style="fill:brown;stroke:black;stroke-width:1;" />
         <circle cx="400" cy="110" r="30" style="fill:brown;stroke:black;stroke-width:1;" />
+        <animate attributeType="XML" attributeName="y" from="0" to="100" dur="5s" repeatCount="indefinite"/>
     </svg>
 </body>
 </html>
