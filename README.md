@@ -15,5 +15,8 @@ Foi um exercicio onde precisava de fazer formulario com varios tipos de input, e
 ## Modulo 2 parte 7
 Foi um exercicio para utilizar as tags audio e video
 
-## Modulo 2 parte 7
+## Modulo 2 parte 8
 Foi um exercicio para utilizar a tag iframe
+
+## Modulo 2 parte 9
+Foi um exercicio para utilizar a tag SVG
