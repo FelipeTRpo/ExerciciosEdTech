@@ -20,3 +20,6 @@ Foi um exercicio para utilizar a tag iframe
 
 ## Modulo 2 parte 9
 Foi um exercicio para utilizar a tag SVG
+
+## Modulo 2 parte 10
+Foi um exercicio para utilizar a tag canvas com um pouco de javascript
