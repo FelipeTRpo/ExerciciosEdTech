@@ -78,32 +78,34 @@ class Ball{
             this.ypos= windowheight/2;
             this.dx= this.speed*2;
             this.dy= this.speed;
-            scorep2.score+=1
+            scorep1.score+=1
         }
         if( this.xpos + this.dx < this.radius ){
             this.xpos= windowwidth/2;
             this.ypos=windowheight/2;
             this.dx= this.speed*2;
             this.dy= this.speed;
-            scorep1.score+=1
+            scorep2.score+=1
         }
 
         if(this.ypos +this.dy > windowheight-this.radius ){
             this.dy= -this.dy;
             if(this.dy>0){
-                this.dy += 1;
-
+                this.dy += 0.5;
+                this.dx += 1;
             }else{
-                this.dy+= -1;
+                this.dy+= -0.5;
+                this.dx+= -1;
             }
         }
         if( this.ypos + this.dy < this.radius ){
             this.dy= -this.dy;
             if(this.dy>0){
-                this.dy += 1;
-
+                this.dy += 0.5;
+                this.dx += 1;
             }else{
-                this.dy+= -1;
+                this.dy+= -0.5;
+                this.dx+= -1;
             }
             
         }
@@ -168,30 +170,30 @@ let updatecanvas = function(){
     document.addEventListener("keyup", keyUpHandler, false);
 //controle de pressionamento de teclas para os jogadores
 function keyDownHandler(e) {
-    if(e.key == "Up" || e.key == "ArrowUp") {
+    if(e.key == "w" || e.key == "w") {
         uppressed1 = true;
     }
-    else if(e.key == "Down" || e.key == "ArrowDown") {
+    else if(e.key == "s" || e.key == "s") {
         downpressed1 = true;
     }
-    if(e.key == "8" || e.key == "8") {
+    if(e.key == "i" || e.key == "i") {
         uppressed2 = true;
     }
-    else if(e.key == "2" || e.key == "2") {
+    else if(e.key == "k" || e.key == "k") {
         downpressed2 = true;
     }
 }
 function keyUpHandler(e) {
-    if(e.key == "Up" || e.key == "ArrowUp") {
+    if(e.key == "w" || e.key == "w") {
         uppressed1 = false;
     }
-    else if(e.key == "Down" || e.key == "ArrowDown") {
+    else if(e.key == "s" || e.key == "s") {
         downpressed1 = false;
     }
-    if(e.key == "8" || e.key == "8") {
+    if(e.key == "i" || e.key == "i") {
         uppressed2 = false;
     }
-    else if(e.key == "2" || e.key == "2") {
+    else if(e.key == "k" || e.key == "k") {
         downpressed2 = false;
     }
 }
