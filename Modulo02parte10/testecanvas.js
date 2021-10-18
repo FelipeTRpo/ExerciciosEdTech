@@ -9,6 +9,7 @@ var downpressed1=false;
 var uppressed2 =false;
 var downpressed2=false;
 var botpressed1=false;
+var botpressed2=false;
 var disablebot =0;
 canvas.width = windowwidth;
 canvas.height = windowheight;
@@ -218,14 +219,12 @@ function keyDownHandler(e) {
         downpressed2 = true;
     }
     if(e.key == "b" || e.key == "b") {
-        if(botpressed1){
-            botpressed1 = false;
-            player2.speed=10;
-        }else{
-            botpressed1=true;
-            player2.speed=7;
-        }
+        botpressed1 = true;
     }
+    if(e.key == "n" || e.key == "n") {
+        botpressed2 = true;
+    }
+
 
 }
 function keyUpHandler(e) {
@@ -241,6 +240,14 @@ function keyUpHandler(e) {
     else if(e.key == "k" || e.key == "k") {
         downpressed2 = false;
     }
+    if(e.key == "b" || e.key == "b") {
+        botpressed1 = false;
+    }
+    if(e.key == "n" || e.key == "n") {
+        botpressed2 = false;
+    }
+
+
 
 
 }
@@ -289,7 +296,7 @@ function keyUpHandler(e) {
     //bot do player 2
     function p2bot(){
         
-        if(firstball.xpos>250 && botpressed1){
+        if(firstball.xpos>250 && disablebot==1){
             if(player2.ypos+player2.height/2 != firstball.ypos){
                 if(player2.ypos+player2.height/2 > firstball.ypos){
                     player2.ypos-= player2.speed;
@@ -300,14 +307,14 @@ function keyUpHandler(e) {
             
         }
         //desabilitar o bot
-        /*if(botpressed1) {
-           if(disablebot==0){
-                disablebot=1;
-           }else{
-                disablebot=0;
-           }
-        }*/
-
+        if(botpressed1) {
+            disablebot=1;
+            player2.speed=6;
+        }
+        if(botpressed2){
+            disablebot=0;
+            player2.speed=10;
+        }
     }
     p2bot(); 
 }
