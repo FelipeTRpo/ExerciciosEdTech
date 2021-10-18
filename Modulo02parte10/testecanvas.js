@@ -8,6 +8,8 @@ var uppressed1 =false;
 var downpressed1=false;
 var uppressed2 =false;
 var downpressed2=false;
+var botpressed1=false;
+var disablebot =0;
 canvas.width = windowwidth;
 canvas.height = windowheight;
 
@@ -188,8 +190,8 @@ class Playerblock{
 
 //funcionamento
 let firstball = new Ball(400, 300, 10, "black", 3);
-let player1 = new Playerblock(20, 255, 90, 10, "blue", 8);
-let player2 = new Playerblock(780, 255, 90, 10, "red", 8);
+let player1 = new Playerblock(20, 255, 90, 10, "blue", 10);
+let player2 = new Playerblock(780, 255, 90, 10, "red", 10);
 let scorep1 = new Score(350, 40, 30, "blue", 0);
 let scorep2 = new Score(450, 40, 30, "red", 0);
 firstball.draw(context);
@@ -215,6 +217,16 @@ function keyDownHandler(e) {
     else if(e.key == "k" || e.key == "k") {
         downpressed2 = true;
     }
+    if(e.key == "b" || e.key == "b") {
+        if(botpressed1){
+            botpressed1 = false;
+            player2.speed=10;
+        }else{
+            botpressed1=true;
+            player2.speed=7;
+        }
+    }
+
 }
 function keyUpHandler(e) {
     if(e.key == "w" || e.key == "w") {
@@ -229,6 +241,8 @@ function keyUpHandler(e) {
     else if(e.key == "k" || e.key == "k") {
         downpressed2 = false;
     }
+
+
 }
     //update dos objetos
     requestAnimationFrame(updatecanvas);
@@ -273,12 +287,29 @@ function keyUpHandler(e) {
         }
     }
     //bot do player 2
-    /*
     function p2bot(){
-        player2.ypos= firstball.ypos-player2.height/2
+        
+        if(firstball.xpos>250 && botpressed1){
+            if(player2.ypos+player2.height/2 != firstball.ypos){
+                if(player2.ypos+player2.height/2 > firstball.ypos){
+                    player2.ypos-= player2.speed;
+                }else{
+                    player2.ypos += player2.speed;
+                }
+            }
+            
+        }
+        //desabilitar o bot
+        /*if(botpressed1) {
+           if(disablebot==0){
+                disablebot=1;
+           }else{
+                disablebot=0;
+           }
+        }*/
 
     }
-    p2bot(); */
+    p2bot(); 
 }
 
 updatecanvas();
