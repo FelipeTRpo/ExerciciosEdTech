@@ -71,41 +71,74 @@ class Ball{
         context.closePath();
     }
 //movimento e colisao da bola
+    
     update(){
         
         if(this.xpos +this.dx > windowwidth-this.radius ){
             this.xpos= windowwidth/2;
             this.ypos= windowheight/2;
-            this.dx= this.speed*2;
-            this.dy= this.speed;
-            scorep1.score+=1
+            this.dx= this.speed*5*(Math.random()-0.5);
+            this.dy= this.speed*(Math.random()-0.5);
+            scorep1.score+=1;
+ 
+            if(this.dy>0){
+                this.dy += this.speed;
+            }else{
+                this.dy -= this.speed;
+                
+            }
+            if(this.dx>0){
+                this.dx += this.speed;
+            }else{
+                this.dx -= this.speed;
+            }
         }
         if( this.xpos + this.dx < this.radius ){
             this.xpos= windowwidth/2;
             this.ypos=windowheight/2;
-            this.dx= this.speed*2;
-            this.dy= this.speed;
-            scorep2.score+=1
+            this.dx= this.speed*2*(Math.random()-0.5);
+            this.dy= this.speed*(Math.random()-0.5);
+            scorep2.score+=1 
+            if(this.dy>0){
+                this.dy += this.speed;
+            }else{
+                this.dy -= this.speed;
+                
+            }
+            if(this.dx>0){
+                this.dx += this.speed;
+            }else{
+                this.dx -= this.speed;
+            }
+        
         }
 
         if(this.ypos +this.dy > windowheight-this.radius ){
             this.dy= -this.dy;
             if(this.dy>0){
                 this.dy += 0.5;
-                this.dx += 1;
             }else{
                 this.dy+= -0.5;
-                this.dx+= -1;
+            }
+            if(this.dx>0){
+                this.dx+=1;
+
+            }else{
+                this.dx-=1;
             }
         }
         if( this.ypos + this.dy < this.radius ){
             this.dy= -this.dy;
             if(this.dy>0){
-                this.dy += 0.5;
-                this.dx += 1;
+                this.dy += 0.5;                
             }else{
                 this.dy+= -0.5;
-                this.dx+= -1;
+            }
+            if(this.dx>0){
+                this.dx+=1;
+
+            }else{
+                this.dx-=1;
             }
             
         }
@@ -221,7 +254,7 @@ function keyUpHandler(e) {
         player2.ypos += player2.speed;
     }
     //colisao bola e player
-    if(firstball.xpos > player1.xpos && firstball.xpos < player1.xpos+player1.width && firstball.ypos > player1.ypos && firstball.ypos< player1.ypos+player1.height ){
+    if(firstball.xpos-firstball.dx> player1.xpos && firstball.xpos< player1.xpos-firstball.dx+player1.width && firstball.ypos-firstball.dy > player1.ypos && firstball.ypos-firstball.dy< player1.ypos+player1.height ){
         firstball.dx= -firstball.dx;
         if(firstball.dx>0){
             firstball.dx += 1;
@@ -230,7 +263,7 @@ function keyUpHandler(e) {
             firstball.dx+= -1;
         }
     }
-    if(firstball.xpos> player2.xpos && firstball.xpos< player2.xpos+player2.width && firstball.ypos > player2.ypos && firstball.ypos< player2.ypos+player2.height ){
+    if(firstball.xpos+firstball.dx> player2.xpos && firstball.xpos< player2.xpos+firstball.dx+player2.width && firstball.ypos+firstball.dy > player2.ypos && firstball.ypos+firstball.dy< player2.ypos+player2.height ){
         firstball.dx= -firstball.dx;
         if(player2.dx>0){
             firstball.dx += 1;
@@ -239,6 +272,13 @@ function keyUpHandler(e) {
             firstball.dx+= -1;
         }
     }
+    //bot do player 2
+    /*
+    function p2bot(){
+        player2.ypos= firstball.ypos-player2.height/2
+
+    }
+    p2bot(); */
 }
 
 updatecanvas();
