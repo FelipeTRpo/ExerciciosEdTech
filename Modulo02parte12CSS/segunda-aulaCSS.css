@@ -1,0 +1,20 @@
+.cor1{
+    color:blue;
+    font-family: fantasy;
+}
+
+#corunica{
+    color:blueviolet
+
+}
+
+div p:first-child{
+    color:red
+}
+
+p.pseudoelem::first-line{
+    color:yellow
+}
+ul > li {
+    color:green;
+}  
