@@ -1,0 +1,39 @@
+div.escondido{
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    padding: 10px;
+    margin: 50px;
+    border: 3px solid rgb(72, 105, 82);
+    overflow: hidden;
+}
+
+p.automatico{
+    width: 100px;
+    height: 50px;
+    background-color: purple;
+    padding: 10px;
+    margin: 50px;
+    border: 3px solid rgb(77, 51, 51);
+    overflow: auto;
+}
+div.yscroll{
+    width: 100px;
+    height: 50px;
+    background-color: gold;
+    padding: 10px;
+    margin: 50px;
+    border: 3px solid hotpink;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+div.visivel{
+    width: 100px;
+    height: 50px;
+    background-color: royalblue;
+    padding: 10px;
+    margin: 50px;
+    border: 3px solid olive;
+    overflow: visible;
+}

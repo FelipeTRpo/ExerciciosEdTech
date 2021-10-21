@@ -26,3 +26,9 @@ Foi um exercicio para utilizar a tag canvas com um pouco de javascript
 
 ## Modulo 2 parte 11 CSS
 Introduzindo o CSS
+
+## Modulo 2 parte 12 CSS
+Exercicio para usar seletores, pseudo elementos, pseudo calsses e combinadores
+
+## Modulo 2 parte 12 CSS
+Exercicio para usar boxes, e conteudos de exibição
