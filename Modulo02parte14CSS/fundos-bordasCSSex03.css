@@ -1,0 +1,10 @@
+.minhafotocircular{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-image: url(fotominha.png);
+    box-shadow: inset 0px 0px 100px gold;
+}
