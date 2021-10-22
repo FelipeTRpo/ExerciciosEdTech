@@ -30,5 +30,8 @@ Introduzindo o CSS
 ## Modulo 2 parte 12 CSS
 Exercicio para usar seletores, pseudo elementos, pseudo calsses e combinadores
 
-## Modulo 2 parte 12 CSS
+## Modulo 2 parte 13 CSS
 Exercicio para usar boxes, e conteudos de exibição
+
+## Modulo 2 parte 14 CSS
+Exercicio para usar background, borders e box-shadow
