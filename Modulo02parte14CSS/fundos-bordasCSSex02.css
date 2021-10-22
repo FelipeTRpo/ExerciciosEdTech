@@ -1,0 +1,28 @@
+.borda1{
+    width: 400px;
+    height: 100px;
+    background-color: purple;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid rgb(77, 51, 51);
+}
+.borda2{
+    width: 400px;
+    height: 100px;
+    background-color: rgb(182, 199, 33);
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid rgb(255, 0, 157);
+    border-bottom: 8px dashed rgb(32, 218, 72); 
+}
+
+.borda3{
+    width: 400px;
+    height: 100px;
+    background-color: rgb(33, 146, 199);
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid rgb(255, 0, 0);
+    border-top: 8px dotted goldenrod; 
+    border-radius: 20px;
+}

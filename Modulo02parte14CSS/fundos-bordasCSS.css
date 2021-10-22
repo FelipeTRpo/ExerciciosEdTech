@@ -1,0 +1,56 @@
+.caixa1{
+    width: 400px;
+    height: 300px;
+    background-color: purple;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid rgb(77, 51, 51);
+    
+}
+.caixa2{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(255, 17, 0);
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid rgb(23, 21, 168);
+    
+}
+.dentrodacaixa2{
+    width: 60px;
+    height: 30px;
+    background-color: rgba(0, 4, 255, 0.1);
+    padding: 5px;
+    margin: 50px;
+    border: 5px solid rgb(22, 199, 75,1);
+    
+}
+.caixa3{
+    width: 400px;
+    height: 300px;
+    background-image: linear-gradient( 45deg, rgba(199, 34, 22) 5%, rgba(22, 199, 75,1)95%);
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid rgb(23, 21, 168);
+    
+}
+.caixa4{
+    width: 400px;
+    height: 300px;
+    background-image: url(felipeoquebracodigos.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px;
+    margin: 10px;
+    border: 5px dashed rgb(255, 21, 168);  
+}
+.caixa5{
+    width: 400px;
+    height: 300px;
+    background-image: url(charmander.png);
+    background-repeat: repeat;
+    background-size: 25%;
+    padding: 10px;
+    margin: 10px;
+    border: 5px dashed rgb(23, 255, 168);  
+}
