@@ -34,4 +34,7 @@ Exercicio para usar seletores, pseudo elementos, pseudo calsses e combinadores
 Exercicio para usar boxes, e conteudos de exibição
 
 ## Modulo 2 parte 14 CSS
-Exercicio para usar background, borders e box-shadow
+Exercicio para usar background, borders e box-shadow 
+
+## Modulo 2 parte 15 CSS
+Exercicio para usar estilização de fonte e manipulação de direção de textos

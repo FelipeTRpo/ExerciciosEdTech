@@ -1,0 +1,20 @@
+body{
+    background-color: #33B2CF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #002753;
+    font-weight: bold;
+    font-size: 60px;
+}
+div.lado{
+    writing-mode:vertical-rl;
+    color: #0083AF;
+    font-size: 30px;
+    font-weight:900 ;
+}
+span{
+    color:#204B02;
+    background-color: #92C43F;
+
+}
