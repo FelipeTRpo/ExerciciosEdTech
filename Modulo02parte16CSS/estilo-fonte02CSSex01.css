@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'geowebfont';
+    src: url('webfontkit/geo-webfont.woff2') format('woff2'),
+        url('webfontkit/geo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    color: white;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    height: auto;
+    background-color: #8E3801;
+    border: 5px solid #F68506;
+    border-radius: 5em;
+    padding: 40px;
+    margin:20px;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    text-decoration: underline double white;
+    padding: 30px;
+}
+
+h1 + p{
+    font-weight: bold;
+    font-size: 20px;
+}
+div.centro{
+    text-align: center;
+}
+img{
+    border :3px solid #F68506
+}
+ul{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 2rem;
+    list-style-type: none;
+    font-family: 'Anton', sans-serif;
+}
+ul li {
+    padding-left: 2rem;
+    background-image: url(icons8-elemento-fogo-80.png);
+    background-position: 0 0;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+  }
+
+ol{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style-type: upper-roman;
+    list-style-position: inside; 
+    font-family: 'geowebfont';
+}
+a {
+    outline: none;
+    text-decoration: none;
+    color: #FEF0CC;
+    font-weight: bold;
+}
+
+a:link {
+    color:#FEDD9A ;
+}
+
+a:visited {
+    color: #FCC468;
+}
+
+a:focus {
+    border-bottom: 1px solid;
+    color: #FEF0CC;
+    background-color: #762801;
+}
+
+a:hover {
+    border-bottom: 1px solid;
+    color: #FEF0CC;
+    background-color: #762801;
+}
+
+a:active {
+    color: #762801;
+}
