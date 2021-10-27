@@ -1,0 +1,34 @@
+.hexa{
+    color:#f8d666;
+    background-color: #aa25a9;
+}
+.hexatrans{
+    color:#66c7ce62;
+    background-color: #3d25aa7c;
+}
+.rgb{
+    color:rgb(241,55,154);
+    background-color: rgb(55, 241, 185);
+}
+.rgba{
+    color:rgba(63, 94, 55, 0.685);
+    background-color: rgba(67, 59, 175,0.5);
+}
+.hsl{
+    color:hsl(0, 100%, 50%);
+    background-color:hsl(138, 100%, 74%);
+}
+.hsla{
+    color:hsla(138, 100%, 74%, 0.5);
+    background-color:hsla(64, 56%, 44%, 0.9);
+}
+.corbrowser{
+    color:purple;
+    background-color:crimson;
+}
+.coratual{
+    color:black;
+    border:10px solid currentColor;
+    background-color:white;
+   
+}
