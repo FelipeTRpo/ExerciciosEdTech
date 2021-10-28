@@ -38,3 +38,12 @@ Exercicio para usar background, borders e box-shadow
 
 ## Modulo 2 parte 15 CSS
 Exercicio para usar estilização de fonte e manipulação de direção de textos
+
+## Modulo 2 parte 16 CSS
+Exercicio para usar estilização de fonte e manipulação de direção de textos mais aprofundado
+
+## Modulo 2 parte 17 CSS
+Exercicio para usar estilização de cores em diferentes formatos
+
+## Modulo 2 parte 18 CSS
+Exercicio para utilizar flexible box
