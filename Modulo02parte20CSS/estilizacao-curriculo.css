@@ -86,6 +86,7 @@ a:active {
     width:auto;
     flex-wrap: wrap;
     display: flex;
+    min-width: 350px;
 }
 .apresentacao-inicial{
     
@@ -102,6 +103,7 @@ a:active {
     padding-left: 12vw;
     padding-top: 80px;
     padding-bottom: 80px;
+    min-width: 350px;
     
 }
 .fotofelipe{
@@ -145,6 +147,7 @@ a:active {
     align-self: center;
 }
 .sobre-mim{
+    min-width: 350px;
     background-color: #C7C9C8;
     color: #0A273C;
     text-align: center;
@@ -165,7 +168,7 @@ p{
     background-color: #0D3E53;
     height: auto;
     width:auto;
-    
+    min-width: 350px;
     color: #C7C9C8;
 
     padding-left: 30vw;
@@ -183,7 +186,7 @@ p{
     
     width: auto;
     color: #0D3E53;
-
+    min-width: 350px;
     padding-left: 30vw;
     padding-right: 10vw;
     padding-bottom: 2em;
@@ -199,7 +202,7 @@ li{
 .caixa-habilidades{
     background-color: #0D3E53;
     height: auto;
-    
+    min-width: 350px;
     width: auto;
     color: #C7C9C8;
 
