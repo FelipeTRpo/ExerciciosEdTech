@@ -1,0 +1,211 @@
+*{
+    font-family: 'Reem Kufi', sans-serif;
+}
+body{
+    background-color: #0A273C
+    
+}
+a {
+    outline: none;
+    text-decoration: none;
+    color: #FED9CB;
+    font-weight: none;
+}
+a:link {
+    color:#A7ACAF ;
+}
+
+a:visited {
+    color: #A7ACAF;
+}
+
+a:focus {
+    border-bottom: 1px solid;
+    color: #A7ACAF;
+    background-color: #0D3E53;
+}
+
+a:hover {
+    border-bottom: 1px solid;
+    color: #A7ACAF;
+    background-color: #0D3E53;
+}
+a:active {
+    color: #A7ACAF;
+}
+.cabecalho{
+    display: flex;
+    background-color: #0A273C;
+    flex-direction: row;
+    height: auto;
+    width:100vw;
+    justify-content: start;
+    flex-wrap: wrap;
+    display: flex;
+    
+    
+}
+.cabecalhoesquerda{
+    color: #A7ACAF;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    
+    white-space: nowrap;
+    
+
+}
+.cabecalhodireita{
+    display: flex;
+    color: #A7ACAF;
+    align-self:flex-end;
+    justify-self: flex-end;
+    flex-direction: row;
+    
+    
+
+}
+.text-clicavel-cabecalho{
+    padding-left: 2em;
+    font-size: 25px;
+
+}
+.nome-cabecalho{
+    padding-top: 10px;
+    font-size: 72px;
+    padding-bottom: 0%;
+
+}
+.sub-cabecalho{
+    padding: 0px;
+    font-size: 25px;
+}
+.caixa-para-apresentacao-inicial{
+    background-color: #0D3E53;
+    height: auto;
+    width:auto;
+    flex-wrap: wrap;
+    display: flex;
+}
+.apresentacao-inicial{
+    
+    display: flex;
+    height: auto;
+    width: auto;
+    background-color: #0D3E53;
+    color: #0A273C;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding-right: 12vw;
+    padding-left: 12vw;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}
+.fotofelipe{
+    
+    height: 566px;
+    width: 566px;
+}
+.caixa-apr-ini{
+    height: 566px;
+    width: 566px;
+    background-color: #C7C9C8;
+}
+.caixa-inicial{
+    display: flex;
+    flex-direction: column;
+    
+}
+.nomefelipe1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.subtitulo1{
+    font-size: 30px;
+}
+.titulo1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.caixa-icones-redes-sociais{
+    width: 451px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #0A273C;
+    
+}
+.icone-rede-social{
+    height: 43px;
+    width: 43px;
+    align-self: center;
+}
+.sobre-mim{
+    background-color: #C7C9C8;
+    color: #0A273C;
+    text-align: center;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+.titulo2{
+    font-size: 40px;
+    font-weight: bold; 
+}
+p{
+    font-size: 1.5em;
+    
+}
+.caixa-experiencia{
+    background-color: #0D3E53;
+    height: auto;
+    width:auto;
+    
+    color: #C7C9C8;
+
+    padding-left: 30vw;
+    padding-right: 10vw;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    text-align: left;
+}
+.subtitulo2{
+    font-weight: bold;
+}
+.caixa-formacao{
+    background-color: #C7C9C8;
+    height: auto;
+    
+    width: auto;
+    color: #0D3E53;
+
+    padding-left: 30vw;
+    padding-right: 10vw;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    text-align: left;
+}
+ul{
+    font-size: 1.5em;
+}
+li{
+    padding-top: 1em;
+}
+.caixa-habilidades{
+    background-color: #0D3E53;
+    height: auto;
+    
+    width: auto;
+    color: #C7C9C8;
+
+    padding-left: 30vw;
+    padding-right: 10vw;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    text-align: left;
+}
