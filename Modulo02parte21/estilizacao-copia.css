@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'avenir';
+    src: url('assets/fonte-avenir.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'avenir';
+}
+/*seção menu flutuante*/
+.menu-flutuante{
+    color:#121212;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 9999;
+    flex-direction: column;
+}
+.icone-whats, .icone-interrogacao{
+    height: 25px;
+    width: 25px;
+    fill:#121212;
+    margin:19px 0px 24px 0;
+}
+.icone-lupa{
+    height: 14px;
+    width: 14px;
+    margin: 15px 14px 11px 14px;
+}
+.caixa-1-superior{
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.texto-caixa-whats-duvidas{
+    font-size: 14px;
+    margin:23px 0px 28px 0;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+.caixa-whats-duvidas{
+    display: flex;
+
+}
+.caixa-pesquisar{
+    display: flex;
+    
+}
+.caixa-de-pesquisa{
+    display: flex;
+    width:300px;
+    height: 41px;
+    margin:11px 0px 16px 0;
+    background-color:#ffffff;
+}
+.texto-pesquisar{
+    padding: 8px 0 8px 0;
+}
+.caixa-1-inferior{
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-between;
+    width: 94%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.login-redes-sociais{
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+
+.titulo-loja{
+    margin-bottom:30px ;
+}
+.nome-empresa{
+    font-size: 47px;
+    margin-top:10px;
+}
+.subtitulo-empresa{
+    font-size: 17px;
+    white-space: nowrap;
+}
+.icone-redes, .icone-bolsa{
+    height: 22px;
+    width: 22px;
+    margin: 0 6px 0 6px;
+}
+.botoes-menu{
+    display: flex;
+    font-size: 17px;
+    margin-top: 45px;
+    margin-bottom: 32px;
+}
+il{
+    padding: 0 15px 0 15px 
+}
+.texto-login{
+    font-size: 17px;
+    margin: 0 6px 0 6px;
+}
+.icone-usuario{
+    height: 26px;
+    width: 26px;
+    margin: 0 6px 0 6px;
+
+}
+a {
+    outline: none;
+    text-decoration: none;
+    color: #121212;
+    font-weight: none;
+}
+a:link {
+    color:#121212 ;
+}
+
+a:visited {
+    color: #767674;
+}
+
+a:focus {
+    color: #767674;
+}
+
+a:hover {
+    color: #767674;
+}
+.conteudo-pagina{
+    margin-top: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.caixa-flutuante-baixo-direita{
+    display: flex;
+    color: #ffffff;
+    background-color: #121212;
+    height: 56px;
+    width: 250px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    
+}
+/*seção dos produtos*/
+.produtos{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+/* hover do item para poder aparecer a imagem diferente */
+.imagem-produto-hover{
+    display: none;
+    
+}
+.caixa-imagem-produto:hover .imagem-produto{
+    display: none;
+}
+.caixa-imagem-produto:hover .imagem-produto-hover{
+    display:inherit;
+    position: relative;
+}
+
+/* produtos */
+.produto{
+    
+    padding:10px;
+}
+.texto-hover{
+    color: #121212;
+    background-color: #ffffffab;
+    width: 100%;
+    height: 40px;
+    position:absolute;
+    bottom: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+.caixa-aviso-produto{
+    height: 27px;
+    width: 120px;
+    text-align: center;
+    position:absolute;
+    color: #ffffff;
+    background-color: #121212;
+    padding-top: 5px;
+}
+.descricao-produto{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 46px 46px 46px;
+    text-align: center;
+}
+.traco{
+    width: 20px;
+    border: 1px solid #121212;
+    align-self: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.titulo-produto{
+    font-size: 16px;
+    height: 20px;
+}
+.preco-produto{
+    height: 23px;
+    font-size: 17px;
+}
+.separacao{
+    width: 94%;
+    border: 1px solid #121212;
+}
+.informacoes-compra{
+    display: flex;
+    color: #121212;
+    fill: #121212;
+}
+
