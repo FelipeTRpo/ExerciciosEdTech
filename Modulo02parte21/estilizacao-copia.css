@@ -102,7 +102,11 @@
     margin-top: 45px;
     margin-bottom: 32px;
 }
-il{
+ul.ul-menu-flutuante{
+    list-style: none;
+    display: flex;
+}
+li.lista-menu-flutuante{
     padding: 0 15px 0 15px 
 }
 .texto-login{
@@ -153,13 +157,14 @@ a:hover {
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    
+    box-shadow: 0 0 3px 0 hsl(0deg 1% 71% / 50%);
 }
 /*seção dos produtos*/
 .produtos{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: center;
 }
 /* hover do item para poder aparecer a imagem diferente */
 .imagem-produto-hover{
@@ -176,7 +181,6 @@ a:hover {
 
 /* produtos */
 .produto{
-    
     padding:10px;
 }
 .texto-hover{
@@ -221,11 +225,136 @@ a:hover {
 }
 .separacao{
     width: 94%;
-    border: 1px solid #121212;
+    border: 0.2px solid #121212;
+    margin-left: 3%;
 }
 .informacoes-compra{
     display: flex;
+    justify-content: space-around;
+   
     color: #121212;
     fill: #121212;
 }
+.caixa-informacao-compra{
+    display: flex;
+    align-items: center;
+    height: 270px;
+}
+.icone-envio{
+    height: 34px;
+    width: 58px;
+} 
+.icone-mapa{
+    height: 44px;
+    width: 49px;
+} 
+.icone-cartao{
+    height: 33px;
+    width: 49px;
+} 
+.icone-joinha-protegido{
+    height: 39px;
+    width: 49px;
+}
+.caixa-texto-informacao-compra{
+    padding-left: 18px;
+}
+.titulo-informacao-compra{
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+.subtitulo-informacao-compra{
+    font-size: 12px;
+}
+.sobre{
+    display: flex;
+    flex-direction: column;
+    height: 572px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    background-color: #F7F6F6;
+}
+.titulo-sobre{
+    font-size: 40px;
+    line-height: 3em
+}
+.texto-sobre{
+    font-size: 26px;
+    line-height: 1.7em;
+}
 
+.titulo-ultimas-infos{
+    font-size: 17px;
+    line-height: 20px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.ultimas-infos{
+    height: 379px;
+    background-color: #E8E6E6;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5em;
+}
+.lista-ultimas-infos{
+    font-size: 14px;
+    line-height: 28px;
+    list-style: none;
+}
+.icone-escudo{
+    width: 20px;
+    height: 26px;
+}
+.caixa-seguranca-ultimas-infos{
+    display: flex;
+    font-size: 14px;
+}
+.texto-seguranca-ultimas-infos{
+    padding-left: 20px;
+    line-height: 1.5em;
+}
+.insira-email{
+    border: 1px solid #121212;
+    height: 37px ;
+    width: 370px;
+
+}
+.botao-enviar-email{
+    margin-top: 10px;
+    width: 370px;
+    height: 37px;
+    background-color: #121212;
+    color:#ffffff;
+}
+.insira-email{
+    background-color: transparent;
+}
+.texto-insira-email{
+    font-size: 12px;
+    line-height: 2em;
+}
+
+footer{
+    background-color: #121212;
+    height: 190px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.icones-footer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.icone-face-footer .icone-insta-footer .icone-pinterest-footer{
+    height: 25px;
+    width: 25px;
+}
+.texto-footer{
+    text-align: center;
+    color:#ffffff;
+    font-size: 14px;
+    line-height: 1.8em;
+}

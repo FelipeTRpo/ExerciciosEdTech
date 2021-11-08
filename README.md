@@ -47,3 +47,12 @@ Exercicio para usar estilização de cores em diferentes formatos
 
 ## Modulo 2 parte 18 CSS
 Exercicio para utilizar flexible box
+
+## Modulo 2 parte 19 CSS
+Exercicio para utilizar flexible box
+
+## Modulo 2 parte 20 CSS
+Desafio para montar um curriculo com HTML e CSS
+
+## Modulo 2 parte 21
+Desafio para copiar um site de vendar com HTML e CSS
