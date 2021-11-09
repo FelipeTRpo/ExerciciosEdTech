@@ -6,6 +6,9 @@
     border: 0;
     outline: 0;
 }
+body{
+    background-color: #EAE5DC;
+}
 a {
     outline: none;
     text-decoration: none;
@@ -88,22 +91,27 @@ a:hover {
     padding-left: 15%;
     padding-right: 15%;
     align-items: center;
-
+    background-color: #ffffff;
     box-shadow: 2px 1px 5px 2px rgba(0,0,0,.5);
 }
 .foto-pets-1{
-    display: none;
+    width: 0;
+    height: 456px;
 }
 .fotos-pets:hover .foto-gato-1{
-    display: none;
+    width: 0;
+    height: 456px;
+    position: absolute;
 }
 .fotos-pets:hover .foto-pets-1{
-    display: inherit;
-    size: inherit;
+    width: initial;
+    height: 456px;
+    animation-direction:normal;
 }
 .fotos-pets{
     width: 70%;
     height: 456px;
+    position: relative;
 }
 .caixa-frase-grande{
     position: relative;
@@ -219,16 +227,21 @@ li{
     margin-left: 30px;
     margin-right: 60px;
 }
-
-
 .fotos-pets-para-adocao{
     display: flex;
     width: 64%;
     padding-left: 18%;
     padding-right: 18%;
     background-color: #EAE5DC;
-    border-bottom: 2px dotted #e1533c;
     padding-bottom: 14px;
+}
+.separacao-2{
+    border-top: 2px dotted #e1533c;
+    width: 64%;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-color: #EAE5DC;
+
 }
 .caixa-cachorros-para-adocao, .caixa-gatos-para-adocao{
     width: 550px;
@@ -259,45 +272,79 @@ li{
     padding-left: 17%;
     padding-right: 17%;
     background-color: #EAE5DC;
+    padding-top: 32px ;
+    padding-bottom: 32px;
 
+}
+.preco-castracao-gatos{
+    text-align: center;
+    padding-right: 50px;
 }
 .titulo-preco-castracao-1{
     font-size: 29px;
     color: #e1533c;
-    font-weight: bold;
 }
 .preco-castracao-mesmo{
     font-size: 44px;
     color: #e1533c;
     font-weight: bold;
+    padding-bottom: 18px;
+    
 }
 .subtitulo-preco-castracao-1{
     font-size: 16px;
     color: #e1533c;
+    white-space: nowrap;
 }
 .titulo-preco-castracao-2{
     font-size: 20px;
     color: #e1533c;
+    font-weight: lighter;
+    padding-bottom: 14px;
+    padding-left: 30px;
 }
 .subtitulo-preco-castracao-2{
     font-size: 14px;
     color: #494646;
+    padding-left: 30px;
 }
 .titulo-eventos{
     font-size: 29px;
     color: #e1533c;
     font-weight: bold;
+    margin-left: 50px;
+    padding-bottom: 14px;
 }
 .nome-do-evento{
     font-size: 14px;
     color: #e1533c;
     font-weight: bold;
+    padding-left: 50px;
+    padding-right: 30px;
 }
 .descricao-do-evento{
     font-size: 14px;
     color: #494646;
+    padding-left: 50px;
+    padding-bottom: 14px;
+    padding-right: 30px;
 }
-
+.texto-castracao-gatos{
+    padding-right: 50px;
+}
+.caixa-castracao-gatos{
+    background-image: url('assets/fundo-castrcao-gatos.webp');
+    display: flex;
+    width: 478px;
+    height: 210px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+}
+.caixa-eventos{
+    width: 528px;
+    height: 210px;
+}
 
 footer{
     display: flex;
@@ -321,5 +368,4 @@ footer{
 .icone-twitter-footer, .icone-face-footer, .icone-youtube-footer{
     width: 24px;
     height: 24px;
-
 }
