@@ -55,4 +55,7 @@ Exercicio para utilizar flexible box
 Desafio para montar um curriculo com HTML e CSS
 
 ## Modulo 2 parte 21
-Desafio para copiar um site de vendar com HTML e CSS
+Desafio para copiar um site de vendas com HTML e CSS
+
+## Modulo 2 parte 22
+Desafio para copiar um site de pets com HTML e CSS
