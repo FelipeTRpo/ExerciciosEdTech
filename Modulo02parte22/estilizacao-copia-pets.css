@@ -1,0 +1,325 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    color: #e1533c;
+    font-weight: none;
+}
+a:link {
+    color:#e1533c ;
+}
+
+a:visited {
+    color: #e1533c;
+}
+
+a:focus {
+    color: #e1533c;
+}
+
+a:hover {
+    color: #232323;
+}
+.conteudo-pagina{
+    margin-top: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.caixa-flutuante{
+    font-family: Impact, Helvetica;
+    font-weight: lighter;
+    display: flex;
+    color: #dbd3d3;;
+    background-color: #ea8d80;
+    border-radius: 8px;
+    height: 56px;
+    min-width: 200px;
+    max-width: 340px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 0 3px 0 hsl(0deg 1% 71% / 50%);
+    padding-left: 18px;
+    padding-right: 22px;
+}
+.caixa-flutuante:hover{
+    cursor: pointer;
+}
+.menu-inicial{
+    width: 66%;
+    padding-left: 17%;
+    padding-right: 17%;
+    display: flex;
+    background-color: #EAE5DC ;
+    align-items:center;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.botoes-menu-inicial{
+    display: flex;
+    color: #e1533c;
+    line-height: 1.2em;
+    align-items:center;
+    font-size: 15px;
+}
+.gato-titulo{
+    width: 54px ;
+    height: 59px ;
+    padding-right: 10px;
+}
+.titulo-site{
+    font-family:'Lucida Sans Unicode', sans-serif ;
+    font-size: 22px;
+}
+.caixa-imagem-e-frase-grande{
+    display: flex;
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    align-items: center;
+
+    box-shadow: 2px 1px 5px 2px rgba(0,0,0,.5);
+}
+.foto-pets-1{
+    display: none;
+}
+.fotos-pets:hover .foto-gato-1{
+    display: none;
+}
+.fotos-pets:hover .foto-pets-1{
+    display: inherit;
+    size: inherit;
+}
+.fotos-pets{
+    width: 70%;
+    height: 456px;
+}
+.caixa-frase-grande{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-color: #e1533c;
+    align-items: left;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+.borda-extra{
+    border-top: 2px dotted #e1533c;
+    margin-top: 5px;
+    padding-top: 5px ;
+    width: 100%;
+}
+.titulo-1{
+    font-family: Impact, sans-serif;
+    font-size: 72px;
+    color: #232323;
+}
+.subtitulo-1{
+    font-size: 36px;
+    color: #232323;
+    padding-bottom: 1em;
+}
+.quadrado-branco{
+    position: absolute;
+    background-color: #ffffff;
+    height: 80px;
+    width: 85px ;
+    bottom: 0;
+    right: 35%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+}
+.circulo-com-seta{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#e1533c;
+    height: 80px;
+    width: 85px ;
+    border-radius: 100%;
+    bottom: 40px;
+
+}
+.info-1{
+    display: flex;
+    margin-top: 4px;
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #EAE5DC;
+    padding-bottom: 60px;
+}
+li{
+    list-style-image:url('assets/estrela.webp');
+}
+.caixa-voluntariado{
+    border-right:2px dotted #e1533c;
+    margin-top: 30px;
+    padding-right: 30px;
+    width: 150%;
+}
+.titulo-voluntariado{
+    font-size: 29px;
+    color: #e1533c;
+    padding-bottom: 14px;
+    font-weight: bold;
+}
+.texto-voluntariado, .texto-cachorro-da-semana, .texto-gato-da-semana{
+    font-size: 14px;
+    color: #494646;
+    line-height: 1.4em;
+    overflow-wrap: break-word;
+    text-align: start;
+}
+.caixa-pets-da-semana{
+    margin-top: 30px;
+    padding-left: 30px;
+}
+.caixa-cachorro-da-semana, .caixa-gato-da-semana{
+    display: flex;
+}
+.caixa-cachorro-da-semana{
+    padding-bottom: 45px;
+}
+.titulo-cachorro-da-semana, .titulo-gato-da-semana{
+    color: #e1533c;
+    padding-bottom: 14px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.img-cachorro-da-semana{
+    width: 110px;
+    height: 116px;
+    border-radius: 100%;
+    box-shadow: 0 0 0 #000000;
+    margin-left: 30px;
+    margin-right: 60px;
+
+}
+.img-gato-da-semana{
+    width: 115px;
+    height: 116px;
+    border-radius: 100%;
+    box-shadow: 0 0 0 #000000;
+    margin-left: 30px;
+    margin-right: 60px;
+}
+
+
+.fotos-pets-para-adocao{
+    display: flex;
+    width: 64%;
+    padding-left: 18%;
+    padding-right: 18%;
+    background-color: #EAE5DC;
+    border-bottom: 2px dotted #e1533c;
+    padding-bottom: 14px;
+}
+.caixa-cachorros-para-adocao, .caixa-gatos-para-adocao{
+    width: 550px;
+}
+.titulo-cachorros-para-adocao, .titulo-gatos-para-adocao{
+    font-size: 29px;
+    color: #e1533c;
+    line-height: 1.4em;
+    font-weight: bold;
+}
+.fotos-cachorros-para-adocao, .fotos-gatos-para-adocao{
+    display: flex;
+    overflow:auto;
+    overflow-y: hidden;
+    width: 90%;
+}
+.img-cachorro-para-adocao, .img-gato-para-adocao{
+    width: 190px;
+    height: 138px;
+    background-color: #ffffff;
+    padding: 6px;
+    margin: 3px;
+}
+
+.info-2{
+    display: flex;
+    width: 66%;
+    padding-left: 17%;
+    padding-right: 17%;
+    background-color: #EAE5DC;
+
+}
+.titulo-preco-castracao-1{
+    font-size: 29px;
+    color: #e1533c;
+    font-weight: bold;
+}
+.preco-castracao-mesmo{
+    font-size: 44px;
+    color: #e1533c;
+    font-weight: bold;
+}
+.subtitulo-preco-castracao-1{
+    font-size: 16px;
+    color: #e1533c;
+}
+.titulo-preco-castracao-2{
+    font-size: 20px;
+    color: #e1533c;
+}
+.subtitulo-preco-castracao-2{
+    font-size: 14px;
+    color: #494646;
+}
+.titulo-eventos{
+    font-size: 29px;
+    color: #e1533c;
+    font-weight: bold;
+}
+.nome-do-evento{
+    font-size: 14px;
+    color: #e1533c;
+    font-weight: bold;
+}
+.descricao-do-evento{
+    font-size: 14px;
+    color: #494646;
+}
+
+
+footer{
+    display: flex;
+    width: 64%;
+    padding-left: 18%;
+    padding-right: 18%;
+    background-color:#e1533c;
+    color: #ffffff;
+    align-items:center ;
+    height: 162px;
+    justify-content: space-around;
+    font-size: 14px;
+}
+.copright-footer{
+    list-style-image:url('assets/estrela-branca.webp');
+}
+.texto-footer{
+    display: flex;
+    align-items:center ;
+}
+.icone-twitter-footer, .icone-face-footer, .icone-youtube-footer{
+    width: 24px;
+    height: 24px;
+
+}
