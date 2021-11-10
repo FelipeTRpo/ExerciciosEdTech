@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'font-awesome';
+    src: url('assets/fontawesome-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'wixfreemium';
+    src: url('assets/wixfreemiumfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'playfair-regular';
+    src: url('assets/playfair-display-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'playfair-italic';
+    src: url('assets/playfair-display-italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'playfair-bold';
+    src: url('assets/playfair-display-bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'avenir';
+    src: url('assets/avenir-LT.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helvetica';
+    src: url('assets/Helvetica-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    color: #576A7A;
+    font-weight: none;
+}
+a:link {
+    color:#576A7A ;
+}
+
+a:visited {
+    color: #576A7A;
+}
+
+a:focus {
+    color: #576A7A;
+}
+
+a:hover {
+    color: #FA773C;
+}
+body{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.menu-flutuante{
+    z-index: 999999999;
+    width: 90%;
+    display: flex;
+    position: fixed;
+    top:0;
+    border-bottom: 2px solid #576A7A ;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    color:#576A7A;
+    padding-top:25px;
+    padding-bottom: 25px;
+}
+.nome-dono-site{
+    font-size: 24px;
+    padding-left: 5px;
+    font-family: "playfair-bold";
+}
+.subtitulo-dono-site{
+    font-size: 12px;
+    padding-left: 5px;
+    font-family: "avenir";
+}
+.borda-baixo{
+    width: 90%;
+    border-bottom: 2px solid #576A7A ;
+}
+.titulo-site{
+    display:flex;
+
+}
+.icone-cupcake{
+    width: 31px;
+    height: 40px;
+}
+.menu-de-navevacao{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    font-family: "avenir";
+    font-size: 14px;
+}
+.icone-facebook, .icone-instagram, .icone-pinterest, .icone-youtube{
+    width: 22px;
+    height: 22px;
+    padding-right: 9px;
+}
+.intro-site{
+    padding-top: 150px;
+    size: 90%;
+    border-bottom: 2px solid #576A7A ;
+    padding-bottom: 110px;
+}
+.texto-bem-vindo{
+    font-size: 42px;
+    padding-bottom: 50px;
+    font-family: "playfair-italic",serif;
+    color:#576A7A;
+    text-align: center;
+    font-weight: lighter;
+}
+.caixa-img-comida{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.caixa-comida-1{
+    text-align: center;
+}
+.titulo-comida-1{
+    font-size: 18px;
+    padding-top: 16px;
+    font-family: "playfair-italic",serif;
+    color:#576A7A;
+}
+.subtitulo-comida-1{
+    font-size: 15px;
+    font-family: "helvetica";
+    color:#000000;
+}
+.caixa-msg-motivacional{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid #576A7A ;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.img-coracao-laranja{
+    width: 38px;
+    height: 38px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.msg-motivacional{
+    font-size: 34px;
+    font-family: "playfair-italic";
+    color:#576A7A;
+    line-height: 1.5em;
+    padding-bottom: 50px;
+}
+.subtitulo-msg-motivacional{
+    font-size: 16px;
+    font-family: "avenir";
+    color:#576A7A;
+    line-height: 1.5em;
+    padding-bottom: 40px;
+}
+.secao-ultimas-receitas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid #576A7A ;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.img-colher-garfo{
+    width: 38px;
+    height: 38px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+.caixa-img-comida-2{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 40px;
+}
+.titulo-ultimas-receitas{
+    font-size: 42px;
+    padding-bottom: 50px;
+    font-family: "playfair-italic",serif;
+    color:#576A7A;
+    text-align: center;
+    font-weight: lighter;
+}
+.caixa-comida-2{
+    position: relative;
+    width: 484px;
+    height: 484px;
+    background-color: black;
+}
+.img-comida-2{
+    position: relative;
+    width: 484px;
+    height: 484px;
+    opacity: 0.5;
+}
+.caixa-texto-superior{
+    color:#FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.caixa-texto-inferior{
+    color:#FFFFFF;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  
+}
+.secao-sobre-mim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid #576A7A ;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.icone-luva{
+    width: 38px;
+    height: 38px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    transform: rotate(45deg);
+}
+.titulo-sobre-mim{
+    font-size: 42px;
+    padding-bottom: 50px;
+    font-family: "playfair-italic",serif;
+    color:#576A7A;
+    text-align: center;
+    font-weight: lighter;
+}
+.caixa-dentro-sobre-mim{
+    display: flex;
+}
+.icone-3-fotos{
+    width: 38px;
+    height: 38px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.fotos-comidas-variadas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid #576A7A ;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.icone-email{
+    fill: #FA773C;
+    width: 38px;
+    height: 38px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.secao-nao-perca{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid #576A7A ;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-family: "playfair-regular";
+    color: #576A7A;
+    padding: 30px;
+}
