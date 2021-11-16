@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaStore</title>
+    <meta property="og:locale" content="pt-br">
+    <meta property="og:title" content="Alpha Store.">
+    <meta property="og:description" content="Resgate seus premios usando AlphaCoins!">
+    <link rel="stylesheet" href="alphastore-style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+        <img id="logo" src="assets/logo.svg" alt="Logo AlphaStore">
+        <div><a href="">categorias</a></div>
+        </div>
+
+        <nav>
+            <div><a href="">pedidos</a></div><img id="navCart" src="assets/whitecart.svg"
+            alt="Seu carrinho"><img id="userIcon" src="assets/userIcon.svg"
+                alt="Sua conta">
+        </nav>
+
+    </header>
+    <main>
+        <aside id="sideBar">
+
+            <ul>
+                <li id="ulTitle">categorias</li>
+                <li class="ulSubTitle">PRODUTOS</li>
+                <li class="liType1">camisetas</li>
+                <li class="liType1" id="selected">bottons</li>
+                <li class="liType1">canecas</li>
+                <li class="liType1">chaveiros</li>
+                <li class="liType1">outros</li>
+                <li class="ulSubTitle">DESAFIOS</li>
+                <li class="liType2">CSS</li>
+                <li class="liType2">FIGMA</li>
+                <li class="liType2">JAVASCRIPT</li>
+                <li class="liType2">HTML</li>
+            </ul>
+
+            <div id="coins">
+                <img src="assets/alphaCoin.svg" alt="AlphaCoin">
+                <p>200</p>
+            </div>
+
+        </aside>
+
+        <section>
+            <div class="bottons">
+                <span id="spanBottonHeader">Bottons</span>
+                <img src="assets/kenjiBotton.svg" alt="kenjiBotton">
+                <h2>Kenji</h2>
+                <p>Animados?</p>
+                <span id="priceTag"><img class="cartCoin" src="assets/alphaCoin.svg" alt="alphaCoin"/>100</span>
+                <button class="addCart"><img src="assets/whitecart.svg" alt=""></button>
+            </div>
+            <div class="bottons">
+                <span id="spanBottonHeader">Bottons</span>
+                <img src="assets/adaBotton.svg" alt="adaBotton">
+                <h2>Ada</h2>
+                <p>Lovelace</p>
+                <span id="priceTag"><img class="cartCoin" src="assets/alphaCoin.svg" alt="alphaCoin"/>100</span>
+                <button class="addCart"><img src="assets/whitecart.svg" alt=""></button>
+            </div>
+            <div class="bottons">
+                <span id="spanBottonHeader">Bottons</span>
+                <img src="assets/lovelaveBotton.svg" alt="lovelaceBotton">
+                <h2>T2</h2>
+                <p>Turma Lovelace</p>
+                <span id="priceTag"><img class="cartCoin" src="assets/alphaCoin.svg" alt="alphaCoin"/>100</span>
+                <button class="addCart"><img src="assets/whitecart.svg" alt=""></button>
+            </div>
+            <div class="bottons">
+                <span id="spanBottonHeader">Bottons</span>
+                <img src="assets/kenjiBotton.svg" alt="kenjiBotton">
+                <h2>Kenji</h2>
+                <p>Animados?</p>
+                <span id="priceTag"><img class="cartCoin" src="assets/alphaCoin.svg" alt="alphaCoin"/>100</span>
+                <button class="addCart"><img src="assets/whitecart.svg" alt=""></button>
+            </div>
+            <div class="bottons">
+                <span id="spanBottonHeader">Bottons</span>
+                <img src="assets/kenjiBotton.svg" alt="kenjiBotton">
+                <h2>Kenji</h2>
+                <p>Animados?</p>
+                <span id="priceTag"><img class="cartCoin" src="assets/alphaCoin.svg" alt="alphaCoin"/>100</span>
+                <button class="addCart"><img src="assets/whitecart.svg" alt=""></button>
+            </div>
+        </section>
+
+        <aside id="cartSideBar">
+
+            <div id="cartHeader"><img id="myCart" src="assets/cartIcon.svg" alt="Carrinho" />meu carrinho</div>
+            <div id="cartMain">
+                <div id="cartEmpty">
+                    <p id="empty1">sua carrinho
+                        ainda está vazio!</p>
+                        <p id="empty2">adicione algum produto</p>
+                </div>
+                <div id="cartBarMain">
+                    <span><p>faltam</p><img class="cartCoin" src="assets/alphaCoin.svg" alt="AlphaCoin">
+                        <p>1000 para ganhar o frete grátis</p></span>
+                    <div id="cartBar"></div>
+                </div>
+            </div>
+            <div id="subTotal">
+                <p>subtotal</p>
+                <span><img class="cartCoin" src="assets/alphaCoin.svg" alt="AlphaCoin" />0</span>
+            </div>
+            <div id="cartShipping">
+                <input type="text" value="calcule o frete">
+                <button id="add">adicionar</button>
+            </div>
+            <div id="total">
+                <p>total</p>
+                <span><img class="cartCoin" src="assets/alphaCoin.svg" alt="AlphaCoin" />0</span>
+            </div>
+            <div id="cleanAndBuy">
+                <button id="clean"><img id="trash" src="assets/trashBin.svg" alt="trash icon" />Limpar
+                    carrinho</button>
+                <button id="buy"><img id="ok" src="assets/vIcon.svg" alt="ok icon" />Finalizar
+                    compra</button>
+            </div>
+
+        </aside>
+
+    </main>
+
+</body>
+
+</html>
