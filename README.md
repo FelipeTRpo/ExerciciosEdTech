@@ -59,3 +59,12 @@ Desafio para copiar um site de vendas com HTML e CSS
 
 ## Modulo 2 parte 22
 Desafio para copiar um site de pets com HTML e CSS
+
+## Modulo 2 parte 23
+Desafio para copiar um site de comida com HTML e CSS
+
+## Modulo 2 parte 24
+Desafio para montar projeto feito em figma usando HTML e CSS
+
+## Modulo 3 parte 01
+Desafio de preencher tags de uma HTML com js
