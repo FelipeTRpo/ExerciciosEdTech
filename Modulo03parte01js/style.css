@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    color: #393E46;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    color: #222831;
+    font-weight: none;
+}
+a:link {
+    color:#222831 ;
+}
+a:visited {
+    color: #222831;
+}
+a:focus {
+    color: #222831;
+}
+a:hover {
+    color: #00ADB5;
+}
+html{
+    background-color:#EEEEEE ;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foto-principal{
+    width: 400px;
+    height: 600px;
+}
+#titulo-site{
+    text-align: center;
+    font-size: 60px; 
+    padding-bottom: 0.5em;
+}
+.caixa-apresentacao-inicial{
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    line-height: 3em;
+    gap: 30px;
+    border: 1px solid #00ADB5;
+    border-radius: 20px;
+    padding: 10px;
+}
+#nome{
+    font-weight: bold;
+}
+.meu-hobbie{
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 50px;
+}
+#titulo-meu-hobbie{
+    text-align: center;
+}
+#sobre-meu-hobbie{
+    padding-left: 8em;
+    padding-right: 8em;
+    padding-top: 2em;
+    line-height: 1.5em;
+
+}
+#link-para-meu-instagram{
+    padding-left: 8em;
+    padding-right: 8em;
+    line-height: 1.5em;
+}
+.caixa-fotos-do-instagram{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3em 3em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+.foto-do-intagram{
+    height: 500px;
+    width: 300px;
+}
+#o-footer{
+    width: 100%;
+    height: 40px;
+    font-size: 10px;
+    text-align: center;
+    background-color:#00ADB5 ;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
