@@ -3,7 +3,7 @@ var idTag
 var texto
 
 function adicionartexto(idTag, texto,){
-    var element = document.getElementById(idTag);
+    let element = document.getElementById(idTag);
     element.innerHTML = texto;
 }
 adicionartexto('titulo-site', 'Meu hobbie');
