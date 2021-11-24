@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de satisfação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+        Pizzaria <br /> la bella pizza
+        </h1>
+        <nav >
+            <ul>
+                <li><a href="">Peça online</a></li>
+                <li><a href="">Cardápio</a></li>
+                <li><a href="">Promoções</a></li>
+                <li><a href="">Lojas</a></li>
+                <li><a href="">Acompanhe seu pedido</a></li>
+            </ul>
+        </nav>
+        <div></div>
+
+    </header>
+    <main>
+    <h1 class="titulo-avaliacao">Obrigado por pedir nossa maravilhosa pizza ! </h1>
+    <h2 class="subtitulo-avaliacao">Por favor avalie nosso atendimento e produto </h2>
+
+
+
+
+
+
+
+    <div id="caixa-avaliacao">
+    <form>
+        <label for="nome-usuario">Digite seu nome:</label>
+        <input type="text" placeholder="Seu nome" id="nome-usuario">
+        <span>Qual seu nivel de satisfação?</span>
+        <div class="caixa-estrelas">
+            <input onclick=setStar(0) type="checkbox" value="1estrelas" id="estrela1" name="checkestrela">
+            <label onclick=setStar(0) id="label1" for="estrela1"><svg id="svg1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg></label>
+            <input onclick=setStar(1) type="checkbox" value="2estrelas" id="estrela2" name="checkestrela">
+            <label onclick=setStar(1) id="label2" for="estrela2"><svg id="svg2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg></label>
+            <input onclick=setStar(2) type="checkbox" value="3estrelas" id="estrela3" name="checkestrela">
+            <label onclick=setStar(2) id="label3" for="estrela3"><svg id="svg3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg></label>
+            <input onclick=setStar(3) type="checkbox" value="4estrelas" id="estrela4" name="checkestrela">
+            <label onclick=setStar(3) id="label4" for="estrela4"><svg id="svg4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg></label>
+            <input onclick=setStar(4) type="checkbox" value="5estrelas" id="estrela5" name="checkestrela">
+            <label onclick=setStar(4) id="label5" for="estrela5"><svg id="svg5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg></label> 
+        </div>
+        <label for="avaliacao">Dê seu feedback</label>
+        <textarea name="avaliacao" id="avaliacao" cols="30" style="resize:none;" rows="10"></textarea>
+        <!-- <input type="text" id="avaliacao"> -->
+        
+        <button  type="button" onclick=recValue()>Enviar</button>
+    </form>
+    </div>
+    <div id="respostas"></div>
+    </main> 
+    <footer>
+        © 2021 Felipe Tessarollo Ramos
+    </footer>
+    <script type="text/javascript"  src="satisfacao-js.js"></script>
+</body>
+</html>

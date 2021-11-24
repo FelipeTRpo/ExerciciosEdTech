@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    color: #B61500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    color: #B61500;
+    font-weight: none;
+}
+a:link {
+    color:#B61500 ;
+}
+a:visited {
+    color: #B61500;
+}
+a:focus {
+    color: #B61500;
+}
+a:hover {
+    color: #FFAC0E;
+}
+html{
+    background-color:#FBAE89 ;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    background: #DC6B29;
+    z-index: 2;
+    top: 0
+}
+
+ul, nav{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+main{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 200px;
+}
+
+#estrela1,#estrela2,#estrela3,#estrela4,#estrela5{
+    width: 0px;
+    height: 0px;
+} 
+#avaliacao{
+    height: 8em;
+    width: 400px;
+    border-radius: 10px;
+}
+#respostas{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 30px;
+   
+    align-items: center;
+    justify-content: center;
+}
+.classe-caixa-resposta{
+    width: 300px;
+    height: 250px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#nome-usuario{
+    width: 300px;
+    height: 1.5em;
+    border-radius: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 80px;
+}
+button{
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    
+}
+footer{
+    width: 100%;
+    height: 40px;
+    font-size: 10px;
+    text-align: center;
+    background-color:#DC6B29 ;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
