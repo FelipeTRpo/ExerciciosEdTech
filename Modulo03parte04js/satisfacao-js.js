@@ -9,21 +9,19 @@ initialChecked.checked = true;
 
 
 
-for(i=0; i<5; i++ ){
-    if(i==0){
-        let label = document.getElementById(svgstarId[i])
-        label.setAttribute("fill","yellow");
-    }else{
+for(let i=0; i<5; i++ ){
+    let element= document.getElementById(checkstarId[i])
+    element.checked =true;
     let label = document.getElementById(svgstarId[i])
-    label.setAttribute("fill","white");
-    }
+    label.setAttribute("fill","yellow");
+    
 }
 
 
 
 function setStar(starNum){
     
-    for(i=0; i<5; i++ ){
+    for(let i=0; i<5; i++ ){
         let label =document.getElementById(svgstarId[i])
         let element= document.getElementById(checkstarId[i])
         if (i<=starNum){
@@ -39,7 +37,7 @@ function setStar(starNum){
 
 function recValue(){
     let checkedCounter = -1;
-    for(i=0;i<5;i++){
+    for(let i=0;i<5;i++){
         let element= document.getElementById(checkstarId[i])
         if(element.checked==true){
             checkedCounter++;
