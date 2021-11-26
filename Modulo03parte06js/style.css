@@ -59,6 +59,8 @@ main{
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 #form-pedido{
     display: flex;
@@ -100,12 +102,16 @@ figure{
     
     right: 10%;
     top : 200px;
-    width: 750px;
-    height: 555px;
+    max-width: 750px;
+    max-height: 555px;
+    min-width: 250px;
+    min-height: 185px;
 }
 img{
-    width: 750px;
-    height: 555px;
+    max-width: 750px;
+    max-height: 555px;
+    min-width: 250px;
+    min-height: 185px;
 }
 
 
