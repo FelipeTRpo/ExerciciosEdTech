@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte seu hamburguer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo-hamburgueria">
+        Hamburgueria <br /> Big Burguer Bolado
+        </h1>
+        <nav>
+            <ul class="menu-de-procurar">
+                <li><a href="">Peça online</a></li>
+                <li><a href="">Cardápio</a></li>
+                <li><a href="">Promoções</a></li>
+                <li><a href="">Lojas</a></li>
+                <li><a href="">Acompanhe seu pedido</a></li>
+            </ul>
+        </nav>
+        <div></div>
+  
+    </header>
+    <main>
+        <form id="form-pedido">
+            <h1 id="titulo-monte-seu-pedido">Monte seu hamburguer aqui:</h1>
+            <!-- escolher o tipo do pao -->
+            <p class="titulo-escolha">Primeiro, escolha seu pão:</p>
+            <div>
+                <input id="pao-frances" type="radio" value="pao-frances" name="tipo-pao">
+                <label for="pao-frances">Pão francês(R$3,00)</label>
+            </div>
+            <div>
+                <input id="pao-australiano" type="radio" value="pao-australiano" name="tipo-pao">
+                <label for="pao-australiano">Pão australiano (R$8,00)</label>
+            </div>
+            <div>
+                <input id="pao-brioche" type="radio" value="pao-brioche" name="tipo-pao">
+                <label for="pao-brioche">Pão de brioche (R$6,00)</label>
+            </div>
+            <!-- escolher tipo hamburguer -->
+            <p class="titulo-escolha">Segundo, escolha sua carne:</p>
+            <div>
+                <input id="hamburguer-picanha" type="radio" value="hamburguer-picanha" name="tipo-hamburger">
+                <label for="hamburguer-picanha">Hambúrguer de picanha (R$13,00)</label>
+            </div>
+            <div>
+                <input id="hamburguer-costela" type="radio" value="hamburguer-costela" name="tipo-hamburger">
+                <label for="hamburguer-costela">Hambúrguer de costela (R$10,00)</label>
+            </div>
+            <div>
+                <input id="hamburguer-vegano" type="radio" value="hamburguer-vegano" name="tipo-hamburger">
+                <label for="hamburguer-vegano">Hambúrguer vegano (R$12,00)</label>
+            </div>
+            <!-- escolher tipo salada -->
+            <p class="titulo-escolha">Terceiro, escolha a salada de seu lanche:</p>
+            <div>
+                <input id="salada-alface" type="radio" value="salada-alface" name="tipo-salada">
+                <label for="salada-alface">Alface (R$1,50)</label>
+            </div>
+            <div>
+                <input id="salada-tomate" type="radio" value="salada-tomate" name="tipo-salada">
+                <label for="salada-tomate">Tomate (R$1,50)</label>
+            </div>
+            <div>
+                <input id="salada-sem" type="radio" value="salada-sem" name="tipo-salada">
+                <label for="salada-sem">Sem salada (R$0,00)</label>
+            </div>
+            <!-- escolher tipo queijo -->
+            <p class="titulo-escolha">Por fim, escolha seu queijo:</p>
+            <div>
+                <input id="queijo-mussarela" type="radio" value="queijo-mussarela" name="tipo-queijo">
+                <label for="queijo-mussarela">Mussarela (R$3,00)</label>
+            </div>
+            <div>
+                <input id="queijo-prato" type="radio" value="queijo-prato" name="tipo-queijo">
+                <label for="queijo-prato">Prato (R$3,00)</label>
+            </div>
+            <div>
+                <input id="queijo-cheddar" type="radio" value="queijo-cheddar" name="tipo-queijo">
+                <label for="queijo-cheddar">Cheddar (R$5,00)</label>
+            </div>
+            
+            <button type="button" onclick= sendHamburger() id="btn-send">Enviar!</button>
+        </form>
+        <figure>
+            <img id="fotoburger" src="https://www.pngmart.com/files/5/Hamburger-PNG-Transparent-Image.png" alt="">
+        </figure> 
+    </main>
+    <div id="pedidos"></div>
+
+    <script type="text/javascript"  src="hamburguerjs.js"></script>
+    <footer>
+        © 2021 Felipe Tessarollo Ramos
+    </footer>
+</body>
+</html>
