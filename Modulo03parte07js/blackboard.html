@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro negro do Bart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <p class="titulo">Qual frase o Bart vai escrever no quadro negro?</p>
+        <input type="text" id="frase-usada" value="alo galera de cowboy, alo galera de piao">
+        <p class="titulo">Quantas vezes ele deve escrever essa frase?</p>
+        <input type="number" id="quantidade-frase" value="10">
+        <br />
+        <button type="button" onclick=writeBlackboard()>Escreva!</button>
+        
+    </form>
+    <div id="quadro-negro"><div id="caixa-escrito"></div></div>
+    <p id="quadro-apagado"></p>
+    <p id="linhas-escritas"></p>
+    <script type="text/javascript"  src="blackboardjs.js"></script>
+</body>
+</html>
