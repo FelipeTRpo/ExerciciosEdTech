@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo array</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo">Construa uma sequência numérica:</h1>
+    <form>
+        <div class="caixa-numeros">
+            <div class="caixa-input">
+                <label for="primeiro-num">Primeiro numero da sequência</label>
+                <input type="number" id="primeiro-num" class="input-num"> <br />
+            </div>
+            <div class="caixa-input">
+                <label for="segundo-num">Segundo numero da sequência</label>
+                <input type="number" id="segundo-num" class="input-num"> <br />
+            </div>
+            <div class="caixa-input">
+                <label for="terceiro-num">Terceiro numero da sequência</label>
+                <input type="number" id="terceiro-num" class="input-num"> <br />
+            </div>
+            <div class="caixa-input">
+                <label for="quarto-num">Quarto numero da sequência</label>
+                <input type="number" id="quarto-num" class="input-num"> <br />
+            </div>
+        </div>
+        <div class="caixa-botao">
+            <button type="button" onclick=memorySave()>Salvar meus numeros na memória</button>
+            <button type="button" onclick=reverseVector()>Coloque meus numeros ao contrario</button>
+            <button type="button" onclick=numericOrder()>Coloque meus numeros em ordem numérica</button>
+        </div>
+    </form>
+    <p id="numeros-memoria"></p>
+    <p id="resposta"></p>
+    <footer>
+        © 2021 Felipe Tessarollo Ramos
+    </footer>
+    
+    <script type="text/javascript"  src="arrayjs.js"></script>
+</body>
+</html>
