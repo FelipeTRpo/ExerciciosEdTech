@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual carro será o vencendor?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo-site">Corrida maluca!</h1>
+    <p class="subtitulo">
+        Escolha o modo de corrida e aposte com seus amigos quem será o vencedor:
+        <br /><br />
+        Pedro escolheu o carro 1 com propiedades:<br />
+        Velocidade Mínima: 150 km/h <br />
+        Velocidade Máxima: 230 km/h <br />
+        Derrapagem: 3% 
+        <br /><br />
+        Juca escolheu o carro 2 com propiedades:<br />
+        Velocidade Mínima: 120 km/h <br />
+        Velocidade Máxima: 260 km/h <br />
+        Derrapagem: 5% 
+        <br /><br />
+        Edna escolheu o carro 1 com propiedades:<br />
+        Velocidade Mínima: 180 km/h <br />
+        Velocidade Máxima: 220 km/h <br />
+        Derrapagem: 1% 
+    </p>
+    <form>
+        <input type="radio" name="tipo-corrida" id="corrida-rapida" value="10">
+        <label for="corrida-rapida">Corrida rápida (10 voltas)</label>
+        <input type="radio" name="tipo-corrida" id="grande-premio" value="70">
+        <label for="grande-premio">Grande prêmio (70 voltas)</label>
+        <input type="radio" name="tipo-corrida" id="enduro" value="160">
+        <label for="enduro">Enduro (160 voltas)</label>
+        <button type="button" onclick=runGame()>Comece a corrida!</button>
+    </form>
+    
+    <p id="ganhador"></p>
+
+
+    <script type="text/javascript"  src="runningcarsjs.js"></script>
+</body>
+</html>
