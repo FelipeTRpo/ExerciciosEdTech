@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo-site">Jogo da velha</h1>
+    
+    <div id="caixa-jogo-da-velha">
+        <div id="row-1" class="coluna">
+            <button type="button" id="btn-0-0" class="botao" onclick=markHere(0,0)></button>
+            <button type="button" id="btn-1-0" class="botao" onclick=markHere(1,0)></button>
+            <button type="button" id="btn-2-0" class="botao" onclick=markHere(2,0)></button>
+        </div>
+        <div id="row-2" class="coluna">
+            <button type="button" id="btn-0-1" class="botao" onclick=markHere(0,1)></button>
+            <button type="button" id="btn-1-1" class="botao" onclick=markHere(1,1)></button>
+            <button type="button" id="btn-2-1" class="botao" onclick=markHere(2,1)></button>
+        </div>
+        <div id="row-3" class="coluna">
+            <button type="button" id="btn-0-2" class="botao" onclick=markHere(0,2)></button>
+            <button type="button" id="btn-1-2" class="botao" onclick=markHere(1,2)></button>
+            <button type="button" id="btn-2-2" class="botao" onclick=markHere(2,2)></button>
+        </div>
+    </div>
+    
+    <button id="resetar-btn" type="button" onclick=resetar()>Resetar</button>
+    <div id="jogador-agora">Comece com X</div>
+    <div id="vencedor"></div>
+
+    <footer>
+        © 2021 Felipe Tessarollo Ramos
+    </footer>
+    <script type="text/javascript"  src="jogo-da-velhajs.js"></script>
+</body>
+</html>
