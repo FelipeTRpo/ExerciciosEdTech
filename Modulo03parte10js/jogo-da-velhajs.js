@@ -1,6 +1,6 @@
 let plays=[[0,0,0],[0,0,0],[0,0,0]];
 let isMark=[[0,0,0],[0,0,0],[0,0,0]];
-player=2;
+player=1;
 //player 2 = X player 1 = O
 function markHere(pos1,pos2){
     if(isMark[pos1][pos2]==0){
@@ -129,12 +129,12 @@ function markHere(pos1,pos2){
         }
 
         //troca de player
-        if(player==2){
-            document.getElementById('jogador-agora').innerHTML= "Vez do O"
-            player = 1;
-        }else{
+        if(player==1){
             document.getElementById('jogador-agora').innerHTML= "Vez do X"
             player = 2;
+        }else{
+            document.getElementById('jogador-agora').innerHTML= "Vez do O"
+            player = 1;
         }
         isMark[pos1][pos2]=1;
     }
