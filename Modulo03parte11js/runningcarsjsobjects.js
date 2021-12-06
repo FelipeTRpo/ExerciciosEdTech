@@ -1,3 +1,20 @@
+const CarDatabase = {
+    "popular": {
+        "vel_max": {"min": 180, "max": 200}, 
+        "vel_min": {"min": 110, "max": 130}, 
+        "derrapagem": {"min": 0.03, "max": 0.04}
+      },
+      "sport": {
+        "vel_max": {"min": 195, "max": 215}, 
+        "vel_min": {"min": 125, "max": 145}, 
+        "derrapagem": {"min": 0.02, "max": 0.03}
+      },
+      "supersport": {
+        "vel_max": {"min": 210, "max": 230}, 
+        "vel_min": {"min": 140, "max": 160}, 
+        "derrapagem": {"min": 0.01, "max": 0.0175}
+      }
+}
 function runGame(){
     //get number of laps
     let lapTimes = document.querySelector('input[name="tipo-corrida"]:checked').value;
@@ -18,19 +35,19 @@ function runGame(){
         let minSpeedSet = 0;
         let slipingSet = 0;
         if (carChance<=0.6){
-            maxSpeedSet = Math.random() * (200 - 180) + 180;
-            minSpeedSet = Math.random() * (130 - 110) + 110;
-            slipingSet = Math.random() * (0.04 - 0.03) + 0.03;
+            maxSpeedSet = Math.random() * (CarDatabase.popular.vel_max.max - CarDatabase.popular.vel_max.min) + CarDatabase.popular.vel_max.min;
+            minSpeedSet = Math.random() * (CarDatabase.popular.vel_min.max - CarDatabase.popular.vel_min.min) + CarDatabase.popular.vel_min.min;
+            slipingSet = Math.random() * (CarDatabase.popular.derrapagem.max - CarDatabase.popular.derrapagem.min) + CarDatabase.popular.derrapagem.min;
         }
         if (carChance>0.6 & carChance<0.95){
-            maxSpeedSet = Math.random() * (215 - 195) + 195;
-            minSpeedSet = Math.random() * (145 - 125) + 125;
-            slipingSet = Math.random() * (0.03 - 0.02) + 0.02;
+            maxSpeedSet = Math.random() * (CarDatabase.sport.vel_max.max - CarDatabase.sport.vel_max.min) + CarDatabase.sport.vel_max.min;
+            minSpeedSet = Math.random() * (CarDatabase.sport.vel_min.max - CarDatabase.sport.vel_min.min) + CarDatabase.sport.vel_min.min;
+            slipingSet = Math.random() * (CarDatabase.sport.derrapagem.max - CarDatabase.sport.derrapagem.min) + CarDatabase.sport.derrapagem.min;
         }
         if (carChance>=0.95){
-            maxSpeedSet = Math.random() * (230 - 210) + 210
-            minSpeedSet = Math.random() * (160 - 140) + 140;
-            slipingSet = Math.random() * (0.0175 - 0.01) + 0.01;
+            maxSpeedSet = Math.random() * (CarDatabase.supersport.vel_max.max - CarDatabase.supersport.vel_max.min) + CarDatabase.supersport.vel_max.min;
+            minSpeedSet = Math.random() * (CarDatabase.supersport.vel_min.max - CarDatabase.supersport.vel_min.min) + CarDatabase.supersport.vel_min.min;
+            slipingSet = Math.random() * (CarDatabase.supersport.derrapagem.max - CarDatabase.supersport.derrapagem.min) + CarDatabase.supersport.derrapagem.min;
         }
         let theCar = new Car(minSpeedSet,maxSpeedSet,slipingSet,carColor,ownerNameSet);
         return theCar;
@@ -53,6 +70,7 @@ function runGame(){
         carTwoLapSum += carTwoSpeed;
         carThreeLapSum += carThreeSpeed;
     }
+    console.log(carOneLapSum)
     //vencedor
     if(carOneLapSum>carThreeLapSum & carOneLapSum>carTwoLapSum){
         document.getElementById('ganhador').innerHTML = "O vencedor é o " + carOne.ownerName;
