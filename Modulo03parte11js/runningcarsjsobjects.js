@@ -16,11 +16,13 @@ const CarDatabase = {
       }
 }
 function runGame(){
-    //get number of laps
-    let lapTimes = document.querySelector('input[name="tipo-corrida"]:checked').value;
+    let lapTimes = document.querySelector('input[name="tipo-corrida"]:checked').value; //get number of laps
     let carOneChance = Math.random();
     let carTwoChance = Math.random();
     let carThreeChance = Math.random();
+    let winLapsOne = 0;
+    let winLapsTwo = 0;
+    let winLapsThree = 0;
     class Car{
         constructor(minSpeed, maxSpeed, sliping, color, ownerName){
             this.minSpeed= minSpeed;
@@ -56,9 +58,6 @@ function runGame(){
     let carOne = setCar(carOneChance,'blue','Pedro');
     let carTwo = setCar(carTwoChance,'red','Juca');
     let carThree = setCar(carThreeChance,'pink','Edna');
-    let carOneLapSum= 0;
-    let carTwoLapSum= 0;
-    let carThreeLapSum= 0;
     for(let i = 0;i<lapTimes;i++){
         let carOneSpeed = Math.random() * (carOne.maxSpeed - carOne.minSpeed) + carOne.minSpeed;
         let carTwoSpeed = Math.random() * (carTwo.maxSpeed - carTwo.minSpeed) + carTwo.minSpeed;
@@ -66,22 +65,28 @@ function runGame(){
         carOneSpeed = carOneSpeed - carOneSpeed * carOne.sliping;
         carTwoSpeed = carTwoSpeed - carTwoSpeed * carTwo.sliping;
         carThreeSpeed = carThreeSpeed - carThreeSpeed * carThree.sliping;
-        carOneLapSum += carOneSpeed;
-        carTwoLapSum += carTwoSpeed;
-        carThreeLapSum += carThreeSpeed;
+        if(carOneSpeed>carThreeSpeed & carOneSpeed>carTwoSpeed){
+            winLapsOne++;
+        }
+        if(carTwoSpeed>carThreeSpeed & carTwoSpeed>carOneSpeed){
+           winLapsTwo++;
+        }
+        if(carThreeSpeed>carOneSpeed & carThreeSpeed>carTwoSpeed){
+           winLapsThree++;
+        }
     }
-    console.log(carOneLapSum)
     //vencedor
-    if(carOneLapSum>carThreeLapSum & carOneLapSum>carTwoLapSum){
+    if(winLapsOne>winLapsThree & winLapsOne>winLapsTwo){
         document.getElementById('ganhador').innerHTML = "O vencedor é o " + carOne.ownerName;
     }
-    if(carTwoLapSum>carThreeLapSum & carTwoLapSum>carOneLapSum){
+    if(winLapsTwo>winLapsThree & winLapsTwo>winLapsOne){
         document.getElementById('ganhador').innerHTML = "O vencedor é o " + carTwo.ownerName;
     }
-    if(carThreeLapSum>carOneLapSum & carThreeLapSum>carTwoLapSum){
+    if(winLapsThree>winLapsOne & winLapsThree>winLapsTwo){
         document.getElementById('ganhador').innerHTML = "O vencedor é o " + carThree.ownerName;
     }
     //mostrando carro sortiado
+        //carro1
     if (carOneChance<=0.6){
         document.getElementById('jogador-um').innerHTML = carOne.ownerName + " sorteou o carro popular";
     }
@@ -91,7 +96,7 @@ function runGame(){
     if (carOneChance>=0.95){
         document.getElementById('jogador-um').innerHTML = carOne.ownerName + " sorteou o carro Super Sport";
     }
-
+        //carro2
     if (carTwoChance<=0.6){
         document.getElementById('jogador-dois').innerHTML = carTwo.ownerName + " sorteou o carro popular";
     }
@@ -101,7 +106,7 @@ function runGame(){
     if (carTwoChance>=0.95){
         document.getElementById('jogador-dois').innerHTML = carTwo.ownerName + " sorteou o carro Super Sport";
     }
-
+        //carro3
     if (carThreeChance<=0.6){
         document.getElementById('jogador-tres').innerHTML = carThree.ownerName + " sorteou o carro popular";
     }
