@@ -77,15 +77,15 @@ function runGame(){
     }
     //vencedor
     if(winLapsOne>winLapsThree & winLapsOne>winLapsTwo){
-        document.getElementById('ganhador').innerHTML = "O vencedor é o " + carOne.ownerName;
+        document.getElementById('ganhador').innerHTML = "O vencedor é o " + carOne.ownerName+" com "+winLapsOne+" voltas em primeiro lugar";
     }
     if(winLapsTwo>winLapsThree & winLapsTwo>winLapsOne){
-        document.getElementById('ganhador').innerHTML = "O vencedor é o " + carTwo.ownerName;
+        document.getElementById('ganhador').innerHTML = "O vencedor é o " + carTwo.ownerName+" com "+winLapsTwo+" voltas em primeiro lugar";
     }
     if(winLapsThree>winLapsOne & winLapsThree>winLapsTwo){
-        document.getElementById('ganhador').innerHTML = "O vencedor é o " + carThree.ownerName;
+        document.getElementById('ganhador').innerHTML = "O vencedor é o " + carThree.ownerName+" com "+winLapsThree+" voltas em primeiro lugar";
     }
-    //mostrando carro sortiado
+    //mostrando carro sorteado
         //carro1
     if (carOneChance<=0.6){
         document.getElementById('jogador-um').innerHTML = carOne.ownerName + " sorteou o carro popular";
