@@ -1,0 +1,36 @@
+body{
+    background-color: #2e2d2d;
+    color: #f5d21f;
+    width: 67%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+    border-left: 60px dashed #f5d21f;
+    border-right: 60px dashed #f5d21f;
+}
+.titulo-site{
+    font-size: 35px;
+    font-weight: bold;
+}
+.info-car{
+    display: flex;
+    flex-direction: column;
+}
+.caixa-info {
+    border: 2px solid #f5d21f;
+    border-radius: 5px;
+    padding: 20px
+}
+.caixa-grande-info{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+#ganhador{
+    line-height: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: underline ;
+}

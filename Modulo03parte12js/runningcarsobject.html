@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual carro será o vencendor?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo-site">Corrida maluca!</h1>
+    <div class="info-car">
+        <p class="texto">
+            Cada jogador vai gerar 1 carrinho diferente para si <br />
+            A cada corrida ganha o jogador ganha pontos de experiencia, cada nivel precisa-se de 450xp e o nivel máximo é 10.<br />
+            Cada carrinho gerado pode ser de uma das 3 raridades abaixo: <br />
+        </p>
+
+        <div class="caixa-info1">
+            a. Popular: 60% de chances; <br />
+            b. Sport: 35% de chances; <br />
+            c. Super Sport: 5% de chances; <br />
+        </div>
+
+        <p class="texto">Cada carrinho possui 3 atributos: </p>
+        
+        <div class="caixa-grande-info">
+            <div class="caixa-info">
+                a. Velocidade máxima; <br />
+                • Popular: Min.: 180 km/h | Máx.: 200 km/h <br />
+                • Sport: Min.: 195 km/h | Máx.: 215 km/h <br />
+                • Super Sport: Min.: 210 km/h | Máx.: 230 km/h <br />
+            </div>
+            
+            <div class="caixa-info">
+                b. Velocidade mínima; <br />
+                • Popular: Min.: 110 km/h | Máx.: 130 km/h <br />
+                • Sport: Min.: 125 km/h | Máx.: 145 km/h <br />
+                • Super Sport: Min.: 140 km/h | Máx.: 160 km/h <br />
+            </div>
+            
+            <div class="caixa-info">
+                c. Derrapagem (%); <br />
+                • Popular: Min.: 3% | Máx.: 4% <br />
+                • Sport: Min.: 2% | Máx.: 3% <br />
+                • Super Sport: Min.: 1%| Máx.: 1.75% <br />
+            </div>
+        </div>
+    </div>
+    <form>
+        <input type="radio" name="tipo-corrida" id="corrida-rapida" value="10">
+        <label for="corrida-rapida">Corrida rápida (10 voltas)</label>
+        <input type="radio" name="tipo-corrida" id="grande-premio" value="70">
+        <label for="grande-premio">Grande prêmio (70 voltas)</label>
+        <input type="radio" name="tipo-corrida" id="enduro" value="160">
+        <label for="enduro">Enduro (160 voltas)</label>
+        <button type="button" onclick=runGame()>Comece a corrida!</button>
+    </form>
+    <p id="ganhador"></p>
+    <div class="carros-sorteados">
+        <p id="jogador-um"></p>
+        <p id="jogador-dois"></p>
+        <p id="jogador-tres"></p>
+    </div>
+    <div class="experiencia-jogadores">
+        <p id="jogador-um-xp"></p>
+        <p id="jogador-dois-xp"></p>
+        <p id="jogador-tres-xp"></p>
+    </div>
+    <br />
+    
+
+
+
+    <script type="text/javascript"  src="runningcarsjsobjects.js"></script>
+</body>
+</html>
