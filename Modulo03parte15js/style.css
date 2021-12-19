@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    color: #EEEEEE;
+    font-family:Arial, Helvetica, sans-serif;
+}
+html{
+    background-color: #0f0f0f;
+}
+input{
+    color: #0f0f0f;
+}
+button{
+    color: #0f0f0f;
+    height: 1.8em;
+    width: 200px;
+}
+button:hover{
+    background-color: #cacaca;
+}
+form, #valores-cadastrados{
+    display: flex;
+    flex-direction: column;
+    gap: 1em 1em
+}
+body{
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+
+}
+#cadastros{
+    height: 600px;
+    width: 90%;
+    background-color: #2b2b2b;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+.coluna-cadastro{
+    width: 100%;
+    display: flex;
+    line-height: 2em;
+    justify-content: space-between;
+
+
+}
+.titulo{
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}

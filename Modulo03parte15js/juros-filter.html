@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros para atrasados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cadastro-conta">
+        <h1 class="titulo">Cadastro de notinhas</h1>
+        <form> 
+        <div class="caixa-form">
+            <label for="nome-cliente">Nome do cliente:</label>
+            <input type="text" id="nome-cliente">
+        </div>
+        <div class="caixa-form">
+            <label for="data-vencimento">Data de vencimento</label>
+            <input type="date" id="data-vencimento">
+        </div>
+        <div class="caixa-form">
+            <label for="valor-compra">Valor da compra</label>
+            <input type="number" id="valor-compra">
+        </div>
+        <div id="digite-todos"></div>
+        <button type="button" onclick=cadastroCliente()>Cadastrar compra</button>
+        <button type="button" onclick=irCadastro()>Contas cadastradas</button>
+        </form>
+
+    </div>
+    <div id="valores-cadastrados">
+        <h1 class="titulo">Contas cadastradas:</h1>
+        <div id="cadastros"></div>
+        <button type="button" onclick=voltarCadastro()>Voltar para cadastro</button>
+        <button type="button" onclick=calcularJuros()>Calcular juros</button>
+        <button type="button" onclick=nameAgroup()>Agrupar por nomes</button>
+        <button type="button" onclick=dateAgroup()>Agrupar por data de validade</button>
+        <div class="caixa-form">
+            <label for="valor-min">Digite o valor minimo para ser filtrado</label>
+            <input type="text" id="valor-min">
+        </div>
+        <div class="caixa-form">
+            <label for="valor-max">Digite o valor maximo para ser filtrado</label>
+            <input type="text" id="valor-max">
+        </div>
+        <button type="button" onclick=filterValue()>Filtrar por valor da nota</button>
+        <div class="caixa-form">
+            <label for="data-min">Digite data de vencimento inicial para ser filtrado</label>
+            <input type="date" id="data-min">
+        </div>
+        <div class="caixa-form">
+            <label for="data-max">Digite data de vencimento final para ser filtrado</label>
+            <input type="date" id="data-max">
+        </div>
+        
+        <button type="button" onclick=filterDate()>Filtrar por data de validade</button>
+        <p id="soma-total"></p>
+    </div>
+    <script type="text/javascript"  src="jurosjs.js"></script>
+</body>
+</html>
