@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Registrar cliente</h1>
+
+    <form>
+        <input type="text" id="enterName" placeholder="Nome">
+        <input type="text" id="enterEmail" placeholder="Email@email.com">
+        <button type="button" onclick=register()>Registrar</button>
+        <button type="button" onclick=doDelete()>Deletar</button>
+    </form>
+
+    <h1>Pesquisar cliente</h1>
+
+    <form> 
+        <div id="caixa-pesquisa">
+            <select name="inputType" id="inputType">
+                <option value="id">ID</option>
+                <option value="name">Nome</option>
+                <option value="email">E-mail</option>
+            </select>
+            <div class="caixa-input">
+            <input type="text" id="textInput" name="textInput" oninput="searchDelay()">
+            <!-- <select name="textInputSelect" id="textInputSelect"></select> -->
+            </div>
+        </div>
+        <button type="button" onclick=search()>Procurar</button>
+        </form>
+        <div id="caixa-resposta">
+        <table>
+            <thead><tr><td>ID</td><td>Nome</td><td>E-mail</td></tr></thead>
+            <tbody id="resposta"></tbody>
+        </table>
+        </div>
+    <script type="text/javascript"  src="ajax.js"></script>
+</body>
+</html>
