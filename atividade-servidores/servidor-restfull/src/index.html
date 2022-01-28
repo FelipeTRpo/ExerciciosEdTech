@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Registrar cliente</h1>
+
+    <form>
+        <input type="number" id="enterId" placeholder="ID">
+        <input type="text" id="enterName" placeholder="Nome">
+        <div>
+            <button type="button" onclick=register()>Registrar</button>
+            <button type="button" onclick=doDelete()>Deletar</button>
+            <button type="button" onclick=update()>Update</button>
+        </div>
+    </form>
+
+    <h1>Pesquisar por ID</h1>
+
+    <form> 
+        <div id="caixa-pesquisa">
+            <div class="caixa-input">
+            <input type="text" id="textId" name="textId" >
+            </div>
+        </div>
+        <button type="button" onclick=search()>Procurar</button>
+        </form>
+        <div id="caixa-resposta">
+        <table>
+            <thead><tr><td>ID</td><td>Nome</td></tr></thead>
+            <tbody id="resposta"></tbody>
+        </table>
+        </div>
+    <script type="text/javascript"  src="ajax.js"></script>
+</body>
+</html>
