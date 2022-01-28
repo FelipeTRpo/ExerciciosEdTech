@@ -26,4 +26,24 @@ module.exports = function(app) { app.get('/ramal', function (req,res){
     alphaNames.sort();
     res.json(alphaNames);
 })
-}
+};
+
+module.exports = function(app) { app.post('/register',(req, res)=>{
+    const newID = users[users.length-1].id +1;
+    console.log(req.body)
+    const newPost = {"id":newID, "name": req.body[0].name,"email": req.body[0].email,"phone":req.body[0].phone,"sector":req.body[0].sector,"birth":req.body[0].birth};
+    let memoryData = data;
+    memoryData.push(newPost);
+    
+    res.send("end");
+  })
+};
+
+  module.exports = function(app) { app.delete('/delete', (req,res)=>{
+    
+    const idResult = users.filter((element)=> element.email == req.body[0].email && element.name == req.body[0].name);
+    const id = users.indexOf(idResult[0]);
+    users.splice(id,1);
+    res.send("end");
+  })
+};

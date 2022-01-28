@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding: 0;
+    color: #EEEEEE;
+    font-family:Arial, Helvetica, sans-serif;
+}
+html{
+    background-color: #0f0f0f;
+}
+input,select,option{
+    color: #0f0f0f;
+}
+button{
+    color: #0f0f0f;
+    height: 1.8em;
+    width: 200px;
+    margin-bottom: 25px;
+}
+button:hover{
+    background-color: #cacaca;
+}
+form, #valores-cadastrados{
+    display: flex;
+    flex-direction: column;
+    gap: 1em 1em
+}
+body{
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+select{
+    width: 60px;
+    height: 25px;
+}
+input,#textInputSelect{
+    height: 25px;
+    width: 200px;
+    border-radius: 5px;
+    margin-left: 22px;
+}
+
+#textInputSelect{
+    position: relative; 
+}
+#caixa-resposta{
+    height: 600px;
+    width: 90%;
+    background-color: #2b2b2b;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+#caixa-pesquisa{
+    display: flex;
+}
+.coluna-cadastro{
+    width: 100%;
+    display: flex;
+    line-height: 2em;
+    justify-content: space-between;
+}
+.titulo{
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+td{
+    border: #cacaca 1px solid
+}
+thead{
+    font-size: 1.2em;
+    font-weight: bold;
+}

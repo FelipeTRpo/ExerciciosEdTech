@@ -4,10 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario clientes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="text">
-    <button type="button"></button>
+
+    <h1>Registrar cliente</h1>
+
+    <form>
+        Nome: <input type="text" id="enterName" >
+        Data de nascimento: <input type="date" id="enterBirthdate">
+        Setor: <input type="text" id="enterSector">
+        Ramal: <input type="text" id="enterRamal" >
+        E-mail:<input type="text" id="enterEmail" >
+        <button type="button" onclick=register()>Registrar</button>
+        <button type="button" onclick=doDelete()>Deletar</button>
+    </form>
+
+    <h1>Pesquisar cliente</h1>
+
+    <form> 
+        <div id="caixa-pesquisa">
+            <select name="inputType" id="inputType">
+                <option value="birthMont">Mes de nascimento</option>
+                <option value="sector">Setor</option>
+                <option value="ramal">Ramal</option>
+            </select>
+            <div class="caixa-input">
+            <input type="text" id="textInput" name="textInput">
+            <!-- <select name="textInputSelect" id="textInputSelect"></select> -->
+            </div>
+        </div>
+        <button type="button" onclick=search()>Procurar</button>
+        </form>
+        <div id="caixa-resposta">
+        <table>
+            <thead><tr><td>ID</td><td>Nome</td><td>E-mail</td></tr></thead>
+            <tbody id="resposta"></tbody>
+        </table>
+        </div>
+    <script type="text/javascript"  src="ajax.js"></script>
 </body>
 </html>
