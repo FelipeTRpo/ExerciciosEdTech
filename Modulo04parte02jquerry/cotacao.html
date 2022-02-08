@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="titulo">Tabulador de cotação de BRL para outras moedas</h1>
+    <label for="select-moeda">Escolha a moeda desejada</label>
+    <select id="select-moeda" name="select-moeda">
+        <option value="none">Moeda</option>
+    </select>
+    <div id="cotacao-atual">Escolha uma moeda</div>
+    <p id="titulo-cotacao">Escolha as datas de inicio e fim da cotação desejada</p>
+    <label for="data-inicio">Data de inicio:</label>
+    <input type="date" id="data-inicio" name="data-inicio">
+    <label for="data-inicio">Data de fim:</label>
+    <input type="date" id="data-fim" name="data-fim">
+    <button id="btn">Pesquisar</button>
+    <table>
+        <thead><tr><td>Moeda</td><td>Compra</td><td>Venda</td><td>Máximo</td><td>Mínimo</td><td>Variação</td><td>Porcentagem de variação</td><td>Data e hora</td></tr></thead>
+        <tbody id="resposta"></tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript"  src="cotacaojs.js"></script>
+</body>
+</html>
