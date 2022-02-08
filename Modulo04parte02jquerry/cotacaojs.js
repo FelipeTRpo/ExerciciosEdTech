@@ -17,10 +17,9 @@ $("#select-moeda").on("change",function(){
 });
 
 $("#btn").on("click",function(){
+    $("#resposta").html("")
     const iniDate = $("#data-inicio").val().replaceAll("-","");
     const endDate = $("#data-fim").val().replaceAll("-","");
-    console.log(iniDate)
-    console.log(endDate)
     $.ajax({url:`https://economia.awesomeapi.com.br/${moedaEscolhida}-BRL/${10**20}?start_date=${iniDate}&end_date=${endDate}`}).done(function (data){
         data.forEach((obj=>{
             const dia = new Date(obj.timestamp*1000).getDate();
