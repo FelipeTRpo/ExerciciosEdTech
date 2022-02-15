@@ -1,0 +1,38 @@
+html{
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(111, 255, 236, 0.747);
+    margin-top: 0;
+    padding: 5%;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+h1{
+    color: rgb(49, 49, 49);
+    background-color: aqua;
+    font-size: 40px;
+    text-align: center;
+}
+li{
+    max-width: 20%;
+    overflow: hidden;
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+.acordion-part{
+    height: 100px;
+}
+#video1,#video2,#video3,#video4,#video5{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+#player1,#player2,#player3,#player4,#player5{
+    align-self: center;
+}
