@@ -2,7 +2,7 @@
 $('#minhas-festas').on('click',myParties)
 $('#festas-disponiveis').on('click',showParties)
 $('.participarfesta-btn').on('click',enterThis)
-
+$('#sair-btn').on('click',logout)
 // função que mostra as festas cadastradas do usuario
 function myParties(){
     $('#site-subtitle').html('Minhas festas');
@@ -85,4 +85,9 @@ function generateQRcode(token){
         $('#seuqrcode').html(`Qrcode da festa selecionada:<br/>${anwser}`)
         console.log(anwser);
     });
+}
+
+
+function logout(){
+    window.location.replace("http://localhost:8080/");
 }

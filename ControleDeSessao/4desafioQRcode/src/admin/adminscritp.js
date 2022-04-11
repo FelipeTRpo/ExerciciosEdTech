@@ -1,6 +1,7 @@
 // button control
 $('#btn-register').on('click',userRegister);
 $('#btn-register-party').on('click',partyRegister)
+$('#sair-btn').on('click',logout)
 // user register funciton
 function userRegister(){
     const fullNameInput = document.getElementById("fullname-register").value; 
@@ -45,4 +46,8 @@ function partyRegister(){
         console.log(anwser);
         $("#wrong-match").html("Usuario cadastrado");
     });
+}
+
+function logout(){
+    window.location.replace("http://localhost:8080/");
 }
