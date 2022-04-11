@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&family=Turret+Road:wght@400;500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 0;
+    outline: 0; */
+}
+/* fonts:
+font-family: 'Suez One', serif;
+font-family: 'Turret Road', cursive; */
+
+#login-section{
+    display: flex;
+    background-image: url("./assets/background.png");
+    background-size: cover;
+    min-height: 100vh;
+}
+#logo-section{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-content: center;
+    justify-content: center;
+
+}
+#campo-login{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: #AE3C0AE5;
+    border-radius: 50px;
+    margin: 5%;
+    gap: 50px;
+}
+#site-title{
+    font-size: 150px;
+    color: #F27215;
+    font-family: 'Turret Road', cursive;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #000000;
+    text-align: center;
+}
+
+#site-subtitle{
+    font-size: 60px;
+    color: #F27215;
+    font-family: 'Suez One', serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+    text-align: center;
+}
+
+#site-logo{
+    height: 120px;
+    width: 120px;
+    align-self: center;
+    
+}
+
+input::placeholder{
+    color: #AE3C0A;
+}
+#name-login{
+    align-self: center;
+    width: 65%;
+    background: #FDD7A1;
+    color: #AE3C0A;
+    font-size: 42px;
+    border: none;
+}
+#name-login::placeholder{
+    color: #AE3C0A;
+}
+#password-login::placeholder{
+    color: #AE3C0A;
+}
+#password-login{
+    align-self: center;
+    width: 65%;
+    background: #FDD7A1;
+    color: #AE3C0A;
+    font-size: 42px;
+    border: none;
+}
+#btn-login,#btn-register,#btn-register-party{
+    align-self: center;
+    width: 40%;
+    background: #FDD7A1;
+    color: #AE3C0A;
+    font-size: 42px;
+    border-radius: 20px;
+}
+
+#campo-register{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: #AE3C0AE5;
+    border-radius: 50px;
+    margin: 2%;
+    gap: 50px;
+}
+#campo-register-festa{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: #AE3C0AE5;
+    border-radius: 50px;
+    margin: 2%;
+    gap: 50px;
+    text-align: center;
+}
+input{
+    background: #FDD7A1;
+    color: #AE3C0A;
+}
+#name-register,#password-register,#password-register-confirm,#name-party{
+    align-self: center;
+    width: 65%;
+    background: #FDD7A1;
+    color: #AE3C0A;
+    font-size: 30px;
+    border: none;
+}
+textarea{
+    align-self: center;
+    height: 20vh;
+    width: 80%;
+    background: #FDD7A1;
+    color: #AE3C0A;
+}
+#festas-section{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: url("./assets/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+#campo-festas{
+    width: 95%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background-color: #AE3C0AE5;
+    border-radius: 50px;
+    margin: 2%;
+    gap: 10px 10px;
+    text-align: center;
+}
+
+.festaunica{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    height: 300px;
+    width: 20%;
+    background-color: #730C02;
+    color: #FEEECF;
+    gap: 5px;
+    border-radius: 20px;
+    font-family: 'Suez One', serif;
+}
+
+.img-festaunica{
+    margin-top: 5%;
+    align-self: center;
+    height: 40%;
+    width: 80%;
+}
+.participarfesta-btn{
+    align-self: center;
+    height: 20px;
+    width: 60%;
+}
+.descricao-festa{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 20%;
+    word-break: break-all;
+    background-color: #FDD7A1;
+    color: #730C02;
+}
+#minhas-festas,#festas-disponiveis{
+    width: 70%;
+    background: #FDD7A1;
+    color: #AE3C0A;
+    font-size: 42px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.festa-escolhida-unica{
+    border: 1px solid #000000;
+    color: #FDD7A1;
+    padding: 10px;
+}
+.gerarqrcode-btn{
+    align-self: center;
+    height: 36px;
+    font-size: 32px;
+    width: 30%;
+}
+#seuqrcode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #AE3C0AE5;
+    border-radius: 25px;
+    font-size: 25px;
+    color: #FDD7A1;
+}

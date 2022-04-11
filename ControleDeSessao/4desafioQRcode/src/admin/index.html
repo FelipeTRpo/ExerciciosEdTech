@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Pass</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <section id="login-section">
+        <div id="campo-register">
+            <h2 id="site-subtitle">Registro de usuario</h2>
+            <input type="text" id="name-register" placeholder="Login">
+            <input type="password" id="password-register" placeholder="Senha">
+            <input type="password" id="password-register-confirm" placeholder="Confirme a senha">
+            <p id="message-register"></p>
+            <button type="button" id="btn-register">Enviar</button>
+            <!-- <div id="forgot-create">
+                <p>Criar conta</p>
+                <p>Esqueceu a senha?</p>
+            </div> -->
+        </div>
+        <div id="campo-register-festa">
+            <h2 id="site-subtitle">Registro de festa</h2>
+            <input type="text" id="name-party" placeholder="Titulo da festa">
+            <div>
+                <label for="date-party">Data da festa:</label>
+                <input type="date" id="date-party" >
+                <label for="time-party">Horário da festa:</label>
+                <input type="time" id="time-party" >
+            </div>
+            <textarea id="description-party"  >Descrição da festa</textarea>
+            <button type="button" id="btn-register-party">Enviar</button>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"  src="adminscritp.js"></script>
+</body>
+</html>
