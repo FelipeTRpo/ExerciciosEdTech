@@ -3,6 +3,7 @@ $('#btn-register').on('click',userRegister);
 $('#btn-register-party').on('click',partyRegister)
 // user register funciton
 function userRegister(){
+    const fullNameInput = document.getElementById("fullname-register").value; 
     const inputName = document.getElementById("name-register").value;
     const inputPassword = document.getElementById("password-register").value;
     const inputPasswordConfirm = document.getElementById("password-register-confirm").value;
@@ -14,14 +15,14 @@ function userRegister(){
                 'Content-Type':'application/json',
                 'Accept': 'application/json'
             },
-            body: JSON.stringify([{"name":inputName, "password":inputPassword}])
+            body: JSON.stringify([{"fullname":fullNameInput,"name":inputName, "password":inputPassword}])
         }).then(resposta => resposta.text())
         .then(anwser => {
             console.log(anwser);
-            $("#wrong-match").html("Usuario cadastrado");
+            $("#message-register").html("Usuario cadastrado");
         });
     }else{
-        $("#wrong-match").html("Senhas nao combinam");
+        $("#message-register").html("Senhas nao combinam");
     }
 }
 

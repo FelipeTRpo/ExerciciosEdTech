@@ -5,8 +5,8 @@ const qrCode = require('qrcode-generator')
 const app = express();
 const port = 8080;
 const users = 
-[{"name": "admin","password": "admin","token":"tokenadmin","confirmedParty":[]},
-{"name": "user","password": "123","token":"tokenteste","confirmedParty":[{"partyName":"Festa1","partyToken":"tokenfesta1"},{"partyName":"Festa2","partyToken":"tokenfesta2"}]}];
+[{"fullname":"admin","name": "admin","password": "admin","token":"tokenadmin","confirmedParty":[]},
+{"fullname":"Felipe Tessarollo Ramos","name": "user","password": "123","token":"tokenteste","confirmedParty":[{"partyName":"Festa1","partyToken":"tokenfesta1","enterStatus":false},{"partyName":"Festa2","partyToken":"tokenfesta2","enterStatus":false}]}];
 const partyList = [
     {"name": "Festa1","date":"2022-04-04","time":"23:27","description":"Festa foda"},
     {"name": "Festa2","date":"2022-08-04","time":"22:00","description":"Alo galera de piao"}
@@ -26,7 +26,7 @@ app.post('/userregister',(req, res)=>{
         }
     });
     if(req.cookies.token === admintoken ){
-        const newPost = {"name": req.body[0].name,"password": req.body[0].password,"token":"","confirmedParty":[]};
+        const newPost = {"fullname":req.body[0].fullname,"name": req.body[0].name,"password": req.body[0].password,"token":"","confirmedParty":[]};
         users.push(newPost);
         res.send("Usuario registrado com sucesso");
     }else{
@@ -88,14 +88,14 @@ app.post('/entertheparty',(req,res)=>{
         if(ele.token == req.cookies.token){
 
             const theToken = randomBytes(32).toString('hex');
-            ele.confirmedParty.push({"partyName":req.body[0].partyName,"partyToken":theToken});
+            ele.confirmedParty.push({"partyName":req.body[0].partyName,"partyToken":theToken,"enterStatus":false});
             console.log(ele.confirmedParty)
             entered = true;
-            res.send("Festa entrada");
+            res.send("Entrou");
         }
     });
     if (entered == false){
-        res.send("Sessao nao controlada");
+        res.send("Usuario nao logado");
     }
 });
 
@@ -120,6 +120,30 @@ app.post('/qrcodegenerator',(req,res)=>{
     qr.addData('http://localhost:8080/confirm?token='+token);
     qr.make();
     res.send(qr.createImgTag())
+});
+
+app.get('/confirm',(req,res)=>{
+    const confirmToken = req.query.token
+    let tokenFound = false;
+    users.forEach(ele1=>{
+        ele1.confirmedParty.forEach(ele2=>{
+            if(ele2.partyToken == confirmToken ){
+                if(ele2.enterStatus == false){
+                    console.log(ele2)
+                    ele2.enterStatus = true;
+                    tokenFound = true;
+                    res.send(JSON.stringify({"fullname":ele1.fullname,"user":ele1.name,"partyname":ele2.partyName,"canEnter":"Entrada Autorizada"}))
+                }else{
+                    tokenFound = true;
+                    res.send("Qrcode já utilizado");
+                }
+            }
+        })
+    });
+    if(tokenFound == false){
+        res.send("QrCode Invalido")
+    }
+
 });
 
 app.listen(port, () => {

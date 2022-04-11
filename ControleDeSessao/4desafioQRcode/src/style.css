@@ -120,7 +120,7 @@ input{
     background: #FDD7A1;
     color: #AE3C0A;
 }
-#name-register,#password-register,#password-register-confirm,#name-party{
+#name-register,#password-register,#password-register-confirm,#name-party,#fullname-register{
     align-self: center;
     width: 65%;
     background: #FDD7A1;
