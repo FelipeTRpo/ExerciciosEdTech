@@ -1,0 +1,17 @@
+#root{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.Alive:hover{
+    border: 1px green solid;
+}
+
+.Dead:hover{
+    border: 1px red solid;
+}
+
+.unknown:hover{
+    border: 1px gray solid;
+}
